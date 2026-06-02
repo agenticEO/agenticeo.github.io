@@ -49,7 +49,7 @@ export const KEYNOTE_SPEAKERS: Speaker[] = [
     status: "Confirmed in-person (Paris or Sydney)",
     bio: "Gui-Song Xia is a Hongyi Distinguished Professor at Wuhan University and currently serves as Acting Vice Dean of the School of Artificial Intelligence. His research focuses on computer vision, pattern recognition, photogrammetry, and remote sensing image understanding, with particular interests in aerial image analysis, geometric vision, and multimodal AI. He has published extensively in leading venues such as CVPR, ICCV, TPAMI, IJCV, and IEEE TGRS, and has contributed influential datasets and benchmarks widely used in Earth observation research. He is also known for advancing AI methods for aerial object detection, scene understanding, and geospatial intelligence.",
     url: "http://www.captain-whu.com/en/person/xiaguisong.html",
-    avatar: "http://www.captain-whu.com/assets/xiaguisong-avatar.hRv1DBRc.jpg"
+    avatar: "/manus-storage/xiaguisong-avatar_d6be9ecf.jpg"
   },
   {
     name: "Salman Khan",
