@@ -2,7 +2,6 @@ import {
   Mail, 
   Globe
 } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 import { 
   KEYNOTE_SPEAKERS, 
   PANEL_SPEAKERS, 
@@ -302,9 +301,6 @@ export default function Home() {
                       <h4 className="text-sm font-bold text-slate-900 leading-tight">{speaker.name}</h4>
                     )}
                     <p className="text-xs text-slate-500 font-light leading-tight">{speaker.affiliation}</p>
-                    <span className="inline-block text-[9px] bg-slate-50 text-slate-500 px-1.5 py-0.5 rounded border border-slate-100/60 uppercase tracking-wider font-semibold mt-1">
-                      {speaker.status.split(' ')[0]}
-                    </span>
                   </div>
 
                 </div>
