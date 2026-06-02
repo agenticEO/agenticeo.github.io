@@ -104,7 +104,7 @@ export const ORGANIZERS: Organizer[] = [
     email: "t.huang4@exeter.ac.uk",
     url: "https://tianjinyellow.github.io/",
     bio: "Tianjin Huang is a Lecturer (Assistant Professor) at University of Exeter whose research focuses on building reliable and efficient AI systems for real-world applications. His research interests include reliable foundation models, with emphasis on efficient training, tuning, and compression under imperfect data conditions; agentic AI for robust and generalizable autonomous systems; and AI for science and biomedicine, particularly enabling large models in data-scarce and high-stakes domains. His recent work also explores multimodal foundation models and intelligent AI systems for scientific and geospatial applications.",
-    avatar: "https://tianjinyellow.github.io/imgs/htj.jpg"
+    avatar: "/manus-storage/pasted_file_LxhB5P_htj_c5166337.jpg"
   },
   {
     name: "Ronny Hänsch",
