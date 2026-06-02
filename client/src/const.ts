@@ -67,7 +67,7 @@ export const INVITED_SPEAKERS: Speaker[] = [
     status: "Confirmed (Paris in-person, Sydney online)",
     bio: "Xiao Xiang Zhu (IEEE Fellow) is a Full Professor and Chair of Data Science in Earth Observation at Technical University of Munich. She is internationally recognized for her pioneering contributions to AI for Earth observation, multimodal geospatial foundation models, SAR image analysis, and large-scale urban Earth monitoring. Her research lies at the intersection of machine learning, remote sensing, and geospatial data science, with recent work focusing on foundation models and AI-driven Earth intelligence systems.",
     url: "https://www.asg.ed.tum.de/sipeo/team/zhu/",
-    avatar: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493919263/9DrfZuSabAu7vok4PSS7EX/speaker_xiaoxiang-7jKQfiegim8VGSYSxqk3i3.webp"
+    avatar: "/manus-storage/pasted_file_kl4MIb_xiaoxiangzhu_e7cf6643.png"
   },
   {
     name: "Devis Tuia",
@@ -77,7 +77,10 @@ export const INVITED_SPEAKERS: Speaker[] = [
     bio: "Devis Tuia (IEEE Fellow) is an Associate Professor at École Polytechnique Fédérale de Lausanne, where he leads the Environmental Computational Science and Earth Observation Laboratory (ECEO). His research focuses on machine learning for Earth observation, geospatial foundation models, environmental monitoring, and AI for sustainability. He has made influential contributions to domain adaptation, self-supervised learning, weakly supervised learning, and foundation models for remote sensing. More recently, his work explores multimodal and generative AI systems for Earth observation, with applications in biodiversity monitoring, ecosystem understanding, and climate-related challenges.",
     url: "https://people.epfl.ch/devis.tuia?lang=en",
     avatar: "https://people.epfl.ch/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTI0MjAsImV4cCI6IjIwMjYtMDYtMDNUMTI6Mjg6MDQuNzI0WiIsInB1ciI6ImJsb2JfaWQifX0=--0d710c27f1816c5d641c39dc6b89b3d2d55f04a9/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOlszMDAsMzAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--0e4cac8384c27a8ce16cc743e4688ad1c990158e/150680.jpg?lang=en"
-  },
+  }
+];
+
+export const PANEL_SPEAKERS: Speaker[] = [
   {
     name: "Mengyue Yang",
     role: "Lecturer in Artificial Intelligence",
