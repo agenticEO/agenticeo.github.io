@@ -23,7 +23,7 @@ export interface ScheduleItem {
   details?: string;
 }
 
-export const KEYNOTE_SPEAKERS: Speaker[] = [
+export const INVITED_SPEAKERS: Speaker[] = [
   {
     name: "Stefano Ermon",
     role: "Associate Professor",
@@ -77,10 +77,7 @@ export const KEYNOTE_SPEAKERS: Speaker[] = [
     bio: "Devis Tuia (IEEE Fellow) is an Associate Professor at École Polytechnique Fédérale de Lausanne, where he leads the Environmental Computational Science and Earth Observation Laboratory (ECEO). His research focuses on machine learning for Earth observation, geospatial foundation models, environmental monitoring, and AI for sustainability. He has made influential contributions to domain adaptation, self-supervised learning, weakly supervised learning, and foundation models for remote sensing. More recently, his work explores multimodal and generative AI systems for Earth observation, with applications in biodiversity monitoring, ecosystem understanding, and climate-related challenges.",
     url: "https://people.epfl.ch/devis.tuia?lang=en",
     avatar: "https://people.epfl.ch/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTI0MjAsImV4cCI6IjIwMjYtMDYtMDNUMTI6Mjg6MDQuNzI0WiIsInB1ciI6ImJsb2JfaWQifX0=--0d710c27f1816c5d641c39dc6b89b3d2d55f04a9/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOlszMDAsMzAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--0e4cac8384c27a8ce16cc743e4688ad1c990158e/150680.jpg?lang=en"
-  }
-];
-
-export const PANEL_SPEAKERS: Speaker[] = [
+  },
   {
     name: "Mengyue Yang",
     role: "Lecturer in Artificial Intelligence",

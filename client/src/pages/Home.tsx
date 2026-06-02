@@ -3,10 +3,11 @@ import {
   Globe
 } from "lucide-react";
 import { 
-  KEYNOTE_SPEAKERS, 
-  PANEL_SPEAKERS, 
+  INVITED_SPEAKERS, 
   ORGANIZERS, 
-  SCHEDULE
+  SCHEDULE,
+  Speaker,
+  Organizer
 } from "@/const";
 
 export default function Home() {
@@ -244,11 +245,11 @@ export default function Home() {
         {/* SECTION: SPEAKERS */}
         <section id="speakers" className="space-y-12 scroll-mt-24 relative pb-12">
           
-          {/* Keynote Speakers */}
+          {/* Invited Speakers (Merged Keynote & Panel) */}
           <div className="space-y-8">
             <div className="space-y-2">
               <h2 className="text-3xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-3">
-                Invited Keynote Speakers
+                Invited Speakers
               </h2>
               <p className="text-slate-500 text-sm font-light">
                 Pioneering researchers spanning machine learning, computer vision, and Earth sciences.
@@ -257,7 +258,7 @@ export default function Home() {
 
             {/* Circular Headshots Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-6 gap-y-10">
-              {KEYNOTE_SPEAKERS.map((speaker, idx) => (
+              {INVITED_SPEAKERS.map((speaker: Speaker, idx: number) => (
                 <div key={idx} className="text-center space-y-3 group">
                   
                   {/* Portrait Container */}
@@ -281,11 +282,11 @@ export default function Home() {
                     ) : (
                       speaker.url ? (
                         <a href={speaker.url} target="_blank" rel="noopener noreferrer" className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
-                          {speaker.name.split(' ').map(n => n[0]).join('')}
+                          {speaker.name.split(' ').map((n: string) => n[0]).join('')}
                         </a>
                       ) : (
                         <div className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
-                          {speaker.name.split(' ').map(n => n[0]).join('')}
+                          {speaker.name.split(' ').map((n: string) => n[0]).join('')}
                         </div>
                       )
                     )}
@@ -307,64 +308,6 @@ export default function Home() {
               ))}
             </div>
           </div>
-
-          {/* Panel Speakers */}
-          <div className="space-y-6 pt-6 border-t border-slate-100">
-            <div className="space-y-1">
-              <h3 className="text-xl font-serif font-bold text-slate-900">
-                Panel Speakers
-              </h3>
-              <p className="text-slate-500 text-sm font-light">
-                Panel Theme: <strong className="font-semibold text-slate-700">“Toward General-Purpose Geospatial AI Agents”</strong>
-              </p>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-6 gap-y-10">
-              {PANEL_SPEAKERS.map((speaker, idx) => (
-                <div key={idx} className="text-center space-y-3 group">
-                  <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-slate-100 group-hover:border-sky-500 transition-colors duration-300 shadow-sm">
-                    {speaker.avatar ? (
-                      speaker.url ? (
-                        <a href={speaker.url} target="_blank" rel="noopener noreferrer">
-                          <img 
-                            src={speaker.avatar} 
-                            alt={speaker.name} 
-                            className="w-full h-full object-cover"
-                          />
-                        </a>
-                      ) : (
-                        <img 
-                          src={speaker.avatar} 
-                          alt={speaker.name} 
-                          className="w-full h-full object-cover"
-                        />
-                      )
-                    ) : (
-                      speaker.url ? (
-                        <a href={speaker.url} target="_blank" rel="noopener noreferrer" className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
-                          {speaker.name.split(' ').map(n => n[0]).join('')}
-                        </a>
-                      ) : (
-                        <div className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
-                          {speaker.name.split(' ').map(n => n[0]).join('')}
-                        </div>
-                      )
-                    )}
-                  </div>
-                  <div className="space-y-1">
-                    {speaker.url ? (
-                      <a href={speaker.url} target="_blank" rel="noopener noreferrer" className="hover:text-sky-800 hover:underline transition-all">
-                        <h4 className="text-sm font-bold text-slate-900 leading-tight">{speaker.name}</h4>
-                      </a>
-                    ) : (
-                      <h4 className="text-sm font-bold text-slate-900 leading-tight">{speaker.name}</h4>
-                    )}
-                    <p className="text-xs text-slate-500 font-light leading-tight">{speaker.affiliation}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
           <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-slate-100"></div>
         </section>
 
@@ -381,7 +324,7 @@ export default function Home() {
 
           {/* Circular Headshots Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-6 gap-y-10">
-            {ORGANIZERS.map((org, idx) => (
+            {ORGANIZERS.map((org: Organizer, idx: number) => (
               <div key={idx} className="text-center space-y-3 group">
                 
                 {/* Portrait Container */}
@@ -405,11 +348,11 @@ export default function Home() {
                   ) : (
                     org.url ? (
                       <a href={org.url} target="_blank" rel="noopener noreferrer" className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
-                        {org.name.split(' ').map(n => n[0]).join('')}
+                        {org.name.split(' ').map((n: string) => n[0]).join('')}
                       </a>
                     ) : (
                       <div className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
-                        {org.name.split(' ').map(n => n[0]).join('')}
+                        {org.name.split(' ').map((n: string) => n[0]).join('')}
                       </div>
                     )
                   )}
