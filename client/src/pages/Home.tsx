@@ -93,7 +93,7 @@ export default function Home() {
               Call for Papers
             </h2>
             <p className="text-slate-700 leading-relaxed font-light text-lg text-justify">
-              The **Workshop on Agentic AI for Earth Observation@NeurIPS 2026** invites submissions from researchers in machine learning pertaining to foundation models, remote sensing, and environmental sciences. We welcome contributions that explore reasoning, planning, and autonomous decision-making in complex Earth environments.
+              We invite submissions of original research papers related to building physically plausible world models.
             </p>
           </div>
 
@@ -125,6 +125,43 @@ export default function Home() {
             </p>
           </div>
 
+          {/* Submission Types */}
+          <div className="space-y-4">
+            <h3 className="text-2xl font-serif font-semibold text-slate-900">
+              Submission Types
+            </h3>
+            <div className="space-y-4 text-slate-700 leading-relaxed font-light text-base text-justify">
+              <div className="p-4 bg-slate-50 rounded-lg border border-slate-100/50 space-y-1">
+                <h4 className="font-semibold text-slate-900">Opinion Papers (max 4 pages, NeurIPS format)</h4>
+                <p className="text-sm text-slate-600">
+                  Opinion papers that propose new visions, future directions, or highlight challenges and opportunities in embodied world models for decision-making, without requiring extensive experimental results. Unlimited references are allowed.
+                </p>
+              </div>
+              <div className="p-4 bg-slate-50 rounded-lg border border-slate-100/50 space-y-1">
+                <h4 className="font-semibold text-slate-900">Research Papers (4 to 9 pages, NeurIPS format)</h4>
+                <p className="text-sm text-slate-600">
+                  For original research contributions. Unlimited references and technical appendices are allowed.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Submission Guidelines */}
+          <div className="space-y-4">
+            <h3 className="text-2xl font-serif font-semibold text-slate-900">
+              Submission Guidelines
+            </h3>
+            <ul className="list-disc pl-5 space-y-3 text-base text-slate-700 font-light text-justify">
+              <li><strong>Submission Portal:</strong> Submit your paper via OpenReview.</li>
+              <li><strong>Style Guide:</strong> Please follow the style guidelines of NeurIPS 2025.</li>
+              <li><strong>Non-Archival Policy:</strong> Papers are non-archival—we welcome submissions that have been submitted to or accepted by other venues.</li>
+              <li><strong>Review Process:</strong> Papers submitted to the workshop will be reviewed in a double-blind process.</li>
+              <li><strong>Opinion Paper Title Rule:</strong> For opinion papers, the title should state the opinion and start with "Opinion:", such as <em>"Opinion: Large Language Models Should Not Replace Peer Review in Scientific Publishing"</em>.</li>
+              <li><strong>Expedited Review:</strong> Papers already accepted to NeurIPS 2025 will undergo an expedited review process primarily evaluating their relevance to the workshop themes.</li>
+              <li><strong>Presentation:</strong> All accepted papers will be presented in a poster session.</li>
+            </ul>
+          </div>
+
           {/* Scope List */}
           <div className="space-y-4">
             <h3 className="text-2xl font-serif font-semibold text-slate-900">
@@ -140,28 +177,6 @@ export default function Home() {
               <li>Safety, trustworthiness, and interpretability in EO agents</li>
               <li>Benchmarking and evaluation of geospatial reasoning agents</li>
             </ul>
-          </div>
-
-          {/* Submission Guidelines */}
-          <div className="space-y-4">
-            <h3 className="text-2xl font-serif font-semibold text-slate-900">
-              Submission Guidelines
-            </h3>
-            <div className="text-slate-700 leading-relaxed font-light text-base space-y-4 text-justify">
-              <p>
-                <strong>Format:</strong> All submissions must be a single PDF file formatted using the standard NeurIPS style files. We welcome high-quality original papers in the following two tracks:
-              </p>
-              <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
-                <li><strong>Short Papers / Extended Abstracts:</strong> Up to 4 pages (excluding references).</li>
-                <li><strong>Full Papers:</strong> Up to 8 pages (excluding references and appendices).</li>
-              </ul>
-              <p>
-                <strong>Double-blind reviewing:</strong> All submissions must be anonymized and may not contain any identifying information that may violate the double-blind reviewing policy. This policy applies to any supplementary or linked material as well.
-              </p>
-              <p>
-                <strong>Dual-submission and non-archival policy:</strong> The workshop is non-archival and will not have official proceedings. Ongoing and unpublished work, as well as papers currently under review, are welcome.
-              </p>
-            </div>
           </div>
           <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-slate-100"></div>
         </section>
@@ -181,8 +196,8 @@ export default function Home() {
             <table className="w-full text-left text-base">
               <thead className="bg-slate-50 text-slate-700 border-b border-slate-100 font-semibold">
                 <tr>
-                  <th className="px-6 py-4">Time</th>
-                  <th className="px-6 py-4">Topic / Activity</th>
+                  <th className="px-6 py-3.5">Time</th>
+                  <th className="px-6 py-3.5">Topic / Activity</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
