@@ -149,8 +149,28 @@ export default function Home() {
               Submission Guidelines
             </h3>
             <ul className="list-disc pl-5 space-y-3 text-base text-slate-700 font-light text-justify">
-              <li><strong>Submission Portal:</strong> Submit your paper via OpenReview.</li>
-              <li><strong>Style Guide:</strong> Please follow the style guidelines of NeurIPS 2025.</li>
+              <li>
+                <strong>Submission Portal:</strong> Submit your paper via{" "}
+                <a 
+                  href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop_Proposals" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-sky-800 font-semibold hover:underline"
+                >
+                  OpenReview
+                </a>.
+              </li>
+              <li>
+                <strong>Style Guide:</strong> Please follow the style guidelines of{" "}
+                <a 
+                  href="https://neurips.cc/Conferences/2026/CallForPapers" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-sky-800 font-semibold hover:underline"
+                >
+                  NeurIPS 2026
+                </a>.
+              </li>
               <li><strong>Non-Archival Policy:</strong> Papers are non-archival—we welcome submissions that have been submitted to or accepted by other venues.</li>
               <li><strong>Review Process:</strong> Papers submitted to the workshop will be reviewed in a double-blind process.</li>
               <li><strong>Opinion Paper Title Rule:</strong> For opinion papers, the title should state the opinion and start with "Opinion:", such as <em>"Opinion: Large Language Models Should Not Replace Peer Review in Scientific Publishing"</em>.</li>
