@@ -240,7 +240,7 @@ export default function Home() {
           <div className="space-y-8">
             <div className="space-y-2">
               <h2 className="text-3xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-3">
-                Invited Speakers
+                Invited Speakers & Panelists
               </h2>
               <p className="text-slate-500 text-base font-light">
                 Pioneering researchers spanning machine learning, computer vision, and Earth sciences.
