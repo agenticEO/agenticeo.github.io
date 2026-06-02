@@ -15,7 +15,7 @@ export default function Home() {
     <div className="min-h-screen bg-white text-slate-900 selection:bg-slate-100 selection:text-slate-900 scroll-smooth font-sans antialiased">
       
       {/* HEADER SECTION */}
-      <header className="relative bg-slate-950 text-white overflow-hidden py-24 md:py-32 text-center">
+      <header className="relative bg-slate-950 text-white overflow-hidden py-28 md:py-36 text-center">
         {/* Background Image with Dark Overlay */}
         <div className="absolute inset-0 z-0 opacity-40">
           <img 
@@ -36,11 +36,11 @@ export default function Home() {
             <span className="text-sky-300">Earth Observation</span>
           </h1>
 
-          <div className="text-lg md:text-xl text-slate-200 font-light max-w-2xl mx-auto leading-relaxed">
+          <div className="text-xl md:text-2xl text-slate-200 font-light max-w-2xl mx-auto leading-relaxed">
             December 12, 2026 — Sydney or Paris
           </div>
           
-          <div className="text-sm text-slate-300 font-light max-w-xl mx-auto">
+          <div className="text-base text-slate-300 font-light max-w-xl mx-auto">
             The workshop will be held in a hybrid format.
           </div>
         </div>
@@ -49,10 +49,10 @@ export default function Home() {
       {/* FIXED NAVBAR */}
       <nav className="bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50 py-4 shadow-sm">
         <div className="container max-w-4xl flex flex-col sm:flex-row justify-between items-center gap-4">
-          <a href="#" className="font-serif font-bold text-base md:text-lg text-slate-900 hover:text-sky-800 transition-colors">
+          <a href="#" className="font-serif font-bold text-lg text-slate-900 hover:text-sky-800 transition-colors">
             Agentic AI for EO
           </a>
-          <div className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-none py-1 text-sm font-medium">
+          <div className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-none py-1 text-base font-medium">
             <a href="#about" className="text-slate-600 hover:text-slate-900 transition-colors">About</a>
             <a href="#cfp" className="text-slate-600 hover:text-slate-900 transition-colors">Call for Papers</a>
             <a href="#schedule" className="text-slate-600 hover:text-slate-900 transition-colors">Schedule</a>
@@ -71,7 +71,7 @@ export default function Home() {
             <h2 className="text-3xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-3">
               About
             </h2>
-            <div className="text-slate-600 leading-relaxed space-y-4 font-light text-base text-justify">
+            <div className="text-slate-700 leading-relaxed space-y-5 font-light text-lg text-justify">
               <p>
                 In the era of AI-driven transformations, foundation models (FMs) have become pivotal in various applications, from natural language processing to computer vision. These models, with their immense capabilities, reshape the future of scientific research and the broader human society, but also introduce challenges in their in-the-wild deployments. 
               </p>
@@ -92,45 +92,45 @@ export default function Home() {
             <h2 className="text-3xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-3">
               Call for Papers
             </h2>
-            <p className="text-slate-600 leading-relaxed font-light text-base text-justify">
+            <p className="text-slate-700 leading-relaxed font-light text-lg text-justify">
               The **Workshop on Agentic AI for Earth Observation@NeurIPS 2026** invites submissions from researchers in machine learning pertaining to foundation models, remote sensing, and environmental sciences. We welcome contributions that explore reasoning, planning, and autonomous decision-making in complex Earth environments.
             </p>
           </div>
 
           {/* Key Dates Table */}
           <div className="space-y-4">
-            <h3 className="text-xl font-serif font-semibold text-slate-900">
+            <h3 className="text-2xl font-serif font-semibold text-slate-900">
               Key Dates
             </h3>
             <div className="border border-slate-100 rounded overflow-hidden shadow-sm">
-              <table className="w-full text-left text-sm">
+              <table className="w-full text-left text-base">
                 <tbody className="divide-y divide-slate-100">
                   <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="px-6 py-4 font-semibold text-slate-700">Paper Submission Deadline</td>
-                    <td className="px-6 py-4 text-slate-600">August 29, 2026 (AoE)</td>
+                    <td className="px-6 py-4.5 font-semibold text-slate-700">Paper Submission Deadline</td>
+                    <td className="px-6 py-4.5 text-slate-600">August 29, 2026 (AoE)</td>
                   </tr>
                   <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="px-6 py-4 font-semibold text-slate-700">Author Notification</td>
-                    <td className="px-6 py-4 text-slate-600">September 29, 2026 (AoE)</td>
+                    <td className="px-6 py-4.5 font-semibold text-slate-700">Author Notification</td>
+                    <td className="px-6 py-4.5 text-slate-600">September 29, 2026 (AoE)</td>
                   </tr>
                   <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="px-6 py-4 font-semibold text-slate-700">Camera-Ready Deadline</td>
-                    <td className="px-6 py-4 text-slate-600">October 20, 2026 (AoE, TBA)</td>
+                    <td className="px-6 py-4.5 font-semibold text-slate-700">Camera-Ready Deadline</td>
+                    <td className="px-6 py-4.5 text-slate-600">October 20, 2026 (AoE, TBA)</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-slate-400 italic">
+            <p className="text-sm text-slate-400 italic">
               All deadlines follow the Anywhere on Earth (AoE) timezone.
             </p>
           </div>
 
           {/* Scope List */}
           <div className="space-y-4">
-            <h3 className="text-xl font-serif font-semibold text-slate-900">
+            <h3 className="text-2xl font-serif font-semibold text-slate-900">
               Scope & Topics
             </h3>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-sm text-slate-600 font-light list-disc pl-5">
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 text-base text-slate-700 font-light list-disc pl-5">
               <li>Agentic AI for geospatial reasoning and decision-making</li>
               <li>Reinforcement fine-tuning for remote sensing MLLMs</li>
               <li>Tool-augmented geospatial AI agents</li>
@@ -144,14 +144,14 @@ export default function Home() {
 
           {/* Submission Guidelines */}
           <div className="space-y-4">
-            <h3 className="text-xl font-serif font-semibold text-slate-900">
+            <h3 className="text-2xl font-serif font-semibold text-slate-900">
               Submission Guidelines
             </h3>
-            <div className="text-slate-600 leading-relaxed font-light text-sm space-y-4 text-justify">
+            <div className="text-slate-700 leading-relaxed font-light text-base space-y-4 text-justify">
               <p>
                 <strong>Format:</strong> All submissions must be a single PDF file formatted using the standard NeurIPS style files. We welcome high-quality original papers in the following two tracks:
               </p>
-              <ul className="list-disc pl-5 space-y-1 text-xs">
+              <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
                 <li><strong>Short Papers / Extended Abstracts:</strong> Up to 4 pages (excluding references).</li>
                 <li><strong>Full Papers:</strong> Up to 8 pages (excluding references and appendices).</li>
               </ul>
@@ -172,26 +172,26 @@ export default function Home() {
             <h2 className="text-3xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-3">
               Schedule
             </h2>
-            <p className="text-slate-500 text-sm font-light">
+            <p className="text-slate-500 text-base font-light">
               This is the tentative schedule of the workshop. All slots are provided in local conference time.
             </p>
           </div>
 
           <div className="border border-slate-100 rounded overflow-hidden shadow-sm">
-            <table className="w-full text-left text-sm">
+            <table className="w-full text-left text-base">
               <thead className="bg-slate-50 text-slate-700 border-b border-slate-100 font-semibold">
                 <tr>
-                  <th className="px-6 py-3.5">Time</th>
-                  <th className="px-6 py-3.5">Topic / Activity</th>
+                  <th className="px-6 py-4">Time</th>
+                  <th className="px-6 py-4">Topic / Activity</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
                 {SCHEDULE.map((item, idx) => (
                   <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
-                    <td className="px-6 py-4 font-mono text-xs text-sky-800 whitespace-nowrap">{item.time}</td>
-                    <td className="px-6 py-4">
-                      <div className="font-semibold text-slate-800">{item.activity}</div>
-                      {item.details && <div className="text-xs text-slate-500 font-light mt-0.5">{item.details}</div>}
+                    <td className="px-6 py-5 font-mono text-sm text-sky-800 whitespace-nowrap">{item.time}</td>
+                    <td className="px-6 py-5">
+                      <div className="font-semibold text-slate-850 text-base md:text-lg">{item.activity}</div>
+                      {item.details && <div className="text-sm text-slate-500 font-light mt-1">{item.details}</div>}
                     </td>
                   </tr>
                 ))}
@@ -210,7 +210,7 @@ export default function Home() {
               <h2 className="text-3xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-3">
                 Invited Speakers
               </h2>
-              <p className="text-slate-500 text-sm font-light">
+              <p className="text-slate-500 text-base font-light">
                 Pioneering researchers spanning machine learning, computer vision, and Earth sciences.
               </p>
             </div>
@@ -255,10 +255,10 @@ export default function Home() {
                   <div className="space-y-1">
                     {speaker.url ? (
                       <a href={speaker.url} target="_blank" rel="noopener noreferrer" className="hover:text-sky-800 hover:underline transition-all">
-                        <h4 className="text-sm font-bold text-slate-900 leading-tight">{speaker.name}</h4>
+                        <h4 className="text-base font-bold text-slate-900 leading-tight">{speaker.name}</h4>
                       </a>
                     ) : (
-                      <h4 className="text-sm font-bold text-slate-900 leading-tight">{speaker.name}</h4>
+                      <h4 className="text-base font-bold text-slate-900 leading-tight">{speaker.name}</h4>
                     )}
                     <p className="text-xs text-slate-500 font-light leading-tight">{speaker.affiliation}</p>
                   </div>
@@ -276,7 +276,7 @@ export default function Home() {
             <h2 className="text-3xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-3">
               Workshop Organizers
             </h2>
-            <p className="text-slate-500 text-sm font-light">
+            <p className="text-slate-500 text-base font-light">
               An international team of leading researchers bridging remote sensing and artificial intelligence.
             </p>
           </div>
@@ -320,7 +320,7 @@ export default function Home() {
                 {/* Details */}
                 <div className="space-y-1">
                   <a href={org.url} target="_blank" rel="noopener noreferrer" className="hover:text-sky-800 hover:underline transition-all">
-                    <h4 className="text-sm font-bold text-slate-900 leading-tight">{org.name}</h4>
+                    <h4 className="text-base font-bold text-slate-900 leading-tight">{org.name}</h4>
                   </a>
                   <p className="text-xs text-slate-500 font-light leading-tight">{org.affiliation}</p>
                 </div>
