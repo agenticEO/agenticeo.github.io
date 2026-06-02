@@ -66,7 +66,7 @@ export default function Home() {
       <main className="container max-w-4xl py-16 space-y-24">
         
         {/* SECTION: ABOUT */}
-        <section id="about" className="space-y-8 scroll-mt-24 relative">
+        <section id="about" className="space-y-8 scroll-mt-24 relative pb-12">
           <div className="space-y-4">
             <h2 className="text-3xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-3">
               About
@@ -81,47 +81,6 @@ export default function Home() {
               <p>
                 Despite rapid progress in geospatial foundation models and remote sensing MLLMs, most existing EO research remains centered on static perception tasks such as classification, segmentation, captioning, and detection. However, many real-world environmental and societal applications—including disaster response, climate adaptation, environmental monitoring, autonomous sensing, urban planning, and scientific discovery—fundamentally require adaptive reasoning, active information acquisition, long-horizon planning, uncertainty-aware decision-making, and iterative interaction with external tools and simulators.
               </p>
-            </div>
-          </div>
-
-          {/* Key Problems Grid */}
-          <div className="space-y-6 pt-4">
-            <h3 className="text-xl font-serif font-semibold text-slate-900">
-              Key Problems We Aim to Address
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-slate-50 rounded-xl p-6 hover:-translate-y-1 transition-transform duration-300 border border-slate-100/50">
-                <h4 className="text-sky-900 font-semibold text-base mb-2 pb-2 border-b border-sky-200/40">
-                  In-the-wild Adaptation
-                </h4>
-                <p className="text-sm text-slate-600 font-light leading-relaxed">
-                  How can we leverage techniques such as Retrieval-Augmented Generation (RAG), In-context Learning (ICL), or Fine-tuning (FT) to adapt FMs for specific Earth science domains?
-                </p>
-              </div>
-              <div className="bg-slate-50 rounded-xl p-6 hover:-translate-y-1 transition-transform duration-300 border border-slate-100/50">
-                <h4 className="text-sky-900 font-semibold text-base mb-2 pb-2 border-b border-sky-200/40">
-                  Reasoning and Planning
-                </h4>
-                <p className="text-sm text-slate-600 font-light leading-relaxed">
-                  How can geospatial agents be enhanced to tackle complex tasks requiring multi-step reasoning, active sensing, or tool usage in dynamic environments?
-                </p>
-              </div>
-              <div className="bg-slate-50 rounded-xl p-6 hover:-translate-y-1 transition-transform duration-300 border border-slate-100/50">
-                <h4 className="text-sky-900 font-semibold text-base mb-2 pb-2 border-b border-sky-200/40">
-                  Reliability and Responsibility
-                </h4>
-                <p className="text-sm text-slate-600 font-light leading-relaxed">
-                  How can EO agents work reliably outside their training distribution? How do we address issues of hallucination, safety, and interpretability?
-                </p>
-              </div>
-              <div className="bg-slate-50 rounded-xl p-6 hover:-translate-y-1 transition-transform duration-300 border border-slate-100/50">
-                <h4 className="text-sky-900 font-semibold text-base mb-2 pb-2 border-b border-sky-200/40">
-                  Practical Limitations in Deployment
-                </h4>
-                <p className="text-sm text-slate-600 font-light leading-relaxed">
-                  How can models handle practical system constraints, memory limits, response time demands, and the high computational costs of planetary-scale inference?
-                </p>
-              </div>
             </div>
           </div>
           <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-slate-100"></div>
