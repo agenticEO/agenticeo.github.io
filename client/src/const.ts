@@ -122,7 +122,8 @@ export const ORGANIZERS: Organizer[] = [
     affiliation: "University of British Columbia",
     email: "shelhamer@cs.ubc.ca",
     url: "https://imaginarynumber.net/research/",
-    bio: "Evan Shelhamer (invited) is an assistant professor at the University of British Columbia, a member of the Vector Institute, and a Canada CIFAR AI Chair. His research focuses on visual recognition, self-supervision for learning without labels, and adaptation to new/different data. He was the lead developer of the Caffe deep learning framework, led academic and industry tutorials on deep learning, and shared the Everingham service award for Caffe at ICCV'17. He is now focused on self-supervised learning for remote sensing including for interactive mapping (CVPR 2024 demo track)."
+    bio: "Evan Shelhamer (invited) is an assistant professor at the University of British Columbia, a member of the Vector Institute, and a Canada CIFAR AI Chair. His research focuses on visual recognition, self-supervision for learning without labels, and adaptation to new/different data. He was the lead developer of the Caffe deep learning framework, led academic and industry tutorials on deep learning, and shared the Everingham service award for Caffe at ICCV'17. He is now focused on self-supervised learning for remote sensing including for interactive mapping (CVPR 2024 demo track).",
+    avatar: "/manus-storage/evan_shelhamer_1599a99f.jpg"
   },
   {
     name: "Danfeng Hong",
