@@ -5,18 +5,10 @@ import {
   Mail, 
   ExternalLink, 
   ArrowRight, 
-  Layers, 
-  Compass, 
-  Cpu, 
-  ShieldAlert, 
-  HelpCircle,
-  Clock,
-  CheckCircle2,
   ChevronDown,
   Globe
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { 
   KEYNOTE_SPEAKERS, 
@@ -39,66 +31,69 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white text-slate-900 selection:bg-slate-100 selection:text-slate-900 scroll-smooth font-sans antialiased">
       
-      {/* MINIMALIST ACADEMIC HEADER */}
-      <header className="border-b border-slate-100 py-16 md:py-24 bg-slate-50/50">
-        <div className="container max-w-4xl space-y-6">
-          <div className="inline-flex items-center gap-2 text-sky-800 text-xs font-semibold tracking-wider uppercase">
+      {/* HEADER SECTION (Ported exact style/colors from FM-Wild) */}
+      <header className="relative bg-slate-950 text-white overflow-hidden py-24 md:py-32 text-center">
+        {/* Background Image with Dark Overlay */}
+        <div className="absolute inset-0 z-0 opacity-40">
+          <img 
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663493919263/9DrfZuSabAu7vok4PSS7EX/hero_earth_observation-4TP4ax6M6MMDxZkRg3XKr7.webp" 
+            alt="Earth Observation" 
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+
+        <div className="container max-w-4xl relative z-10 space-y-6">
+          <div className="text-sky-400 text-sm font-semibold tracking-widest uppercase">
             NeurIPS 2026 Workshop Proposal
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-slate-900 leading-tight">
-            Agentic AI for <br className="hidden sm:inline" />
-            <span className="text-sky-800">Earth Observation</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-white leading-tight">
+            Agentic AI for <br />
+            <span className="text-sky-300">Earth Observation</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-slate-600 font-light max-w-2xl leading-relaxed">
-            Bridging foundation models, reasoning, and autonomous decision-making for planetary intelligence.
-          </p>
-
-          <div className="flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-500 pt-4 font-medium">
-            <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4 text-slate-400" />
-              <span>December 12, 2026</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-slate-400" />
-              <span>Sydney or Paris (Preference)</span>
-            </div>
+          <div className="text-lg md:text-xl text-slate-200 font-light max-w-2xl mx-auto leading-relaxed">
+            December 12, 2026 — Sydney or Paris
+          </div>
+          
+          <div className="text-sm text-slate-300 font-light max-w-xl mx-auto">
+            The workshop will be held in a hybrid format.
           </div>
         </div>
       </header>
 
-      {/* QUICK STICKY NAV BAR */}
-      <nav className="bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50 py-3">
-        <div className="container max-w-4xl flex justify-between items-center">
-          <div className="flex gap-1 md:gap-4 overflow-x-auto scrollbar-none">
-            <a href="#about" className="px-2 py-1 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">About</a>
-            <a href="#cfp" className="px-2 py-1 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Call for Papers</a>
-            <a href="#schedule" className="px-2 py-1 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Schedule</a>
-            <a href="#speakers" className="px-2 py-1 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Speakers</a>
-            <a href="#organizers" className="px-2 py-1 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Organizers</a>
+      {/* FIXED NAVBAR (Ported exact layout/behavior from FM-Wild) */}
+      <nav className="bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50 py-4 shadow-sm">
+        <div className="container max-w-4xl flex flex-col sm:flex-row justify-between items-center gap-4">
+          <a href="#" className="font-serif font-bold text-base md:text-lg text-slate-900 hover:text-sky-800 transition-colors">
+            Agentic AI for EO
+          </a>
+          <div className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-none py-1 text-sm font-medium">
+            <a href="#about" className="text-slate-600 hover:text-slate-900 transition-colors">About</a>
+            <a href="#cfp" className="text-slate-600 hover:text-slate-900 transition-colors">Call for Papers</a>
+            <a href="#schedule" className="text-slate-600 hover:text-slate-900 transition-colors">Schedule</a>
+            <a href="#speakers" className="text-slate-600 hover:text-slate-900 transition-colors">Speakers</a>
+            <a href="#organizers" className="text-slate-600 hover:text-slate-900 transition-colors">Organizers</a>
           </div>
-          <Button size="sm" className="bg-sky-800 hover:bg-sky-900 text-white font-medium rounded text-xs" asChild>
-            <a href="#cfp">Submit Paper</a>
-          </Button>
         </div>
       </nav>
 
-      {/* MAIN CONTENT CONTAINER */}
-      <main className="container max-w-4xl py-12 space-y-20">
+      {/* CONTINUOUS SINGLE PAGE FLOW (Exact section styling from FM-Wild) */}
+      <main className="container max-w-4xl py-16 space-y-24">
         
         {/* SECTION: ABOUT */}
-        <section id="about" className="space-y-8 scroll-mt-20">
+        <section id="about" className="space-y-8 scroll-mt-24 relative">
           <div className="space-y-4">
-            <h2 className="text-2xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-2">
-              About the Workshop
+            <h2 className="text-3xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-3">
+              About
             </h2>
-            <div className="text-slate-600 leading-relaxed space-y-4 font-light text-base">
+            <div className="text-slate-600 leading-relaxed space-y-4 font-light text-base text-justify">
               <p>
-                Recent breakthroughs in foundation models, multimodal large language models (MLLMs), reinforcement learning (RL), and AI agents are rapidly transforming artificial intelligence from passive perception systems into reasoning- and action-oriented agents capable of planning, tool use, and sequential decision-making. At the same time, Earth observation (EO) is entering a new era driven by unprecedented volumes of multimodal geospatial data, including satellite imagery, SAR, hyperspectral observations, LiDAR, climate simulations, and large-scale geospatial knowledge bases.
+                In the era of AI-driven transformations, foundation models (FMs) have become pivotal in various applications, from natural language processing to computer vision. These models, with their immense capabilities, reshape the future of scientific research and the broader human society, but also introduce challenges in their in-the-wild deployments. 
               </p>
               <p>
-                These developments create a timely opportunity to rethink EO not merely as an image understanding problem, but as a domain for building intelligent agents that can perceive, reason, interact, and make decisions within complex Earth systems.
+                This workshop is motivated by the convergence of two rapidly evolving frontiers: the emergence of agentic and reasoning-centric AI systems, and the growing need for intelligent Earth observation systems capable of supporting real-world environmental decision-making. We believe this moment is uniquely important for establishing a dedicated research forum that bridges machine learning, computer vision, reinforcement learning, geospatial AI, and Earth sciences.
               </p>
               <p>
                 Despite rapid progress in geospatial foundation models and remote sensing MLLMs, most existing EO research remains centered on static perception tasks such as classification, segmentation, captioning, and detection. However, many real-world environmental and societal applications—including disaster response, climate adaptation, environmental monitoring, autonomous sensing, urban planning, and scientific discovery—fundamentally require adaptive reasoning, active information acquisition, long-horizon planning, uncertainty-aware decision-making, and iterative interaction with external tools and simulators.
@@ -106,82 +101,79 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Key Problems Grid */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-serif font-semibold text-slate-800">
+          {/* Key Problems Grid (Exactly like FM-Wild's About questions-grid) */}
+          <div className="space-y-6 pt-4">
+            <h3 className="text-xl font-serif font-semibold text-slate-900">
               Key Problems We Aim to Address
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <h4 className="font-semibold text-slate-900 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-sky-700"></span>
-                  Agentic Geospatial Reasoning
+              <div className="bg-slate-50 rounded-xl p-6 hover:-translate-y-1 transition-transform duration-300 border border-slate-100/50">
+                <h4 className="text-sky-900 font-semibold text-base mb-2 pb-2 border-b border-sky-200/40">
+                  In-the-wild Adaptation
                 </h4>
-                <p className="text-sm text-slate-500 font-light leading-relaxed">
-                  How can we build AI systems capable of active reasoning, tool-augmented decision making, and long-horizon planning in complex Earth environments?
+                <p className="text-sm text-slate-600 font-light leading-relaxed">
+                  How can we leverage techniques such as Retrieval-Augmented Generation (RAG), In-context Learning (ICL), or Fine-tuning (FT) to adapt FMs for specific Earth science domains?
                 </p>
               </div>
-              <div className="space-y-2">
-                <h4 className="font-semibold text-slate-900 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-sky-700"></span>
-                  Reinforcement Fine-Tuning
+              <div className="bg-slate-50 rounded-xl p-6 hover:-translate-y-1 transition-transform duration-300 border border-slate-100/50">
+                <h4 className="text-sky-900 font-semibold text-base mb-2 pb-2 border-b border-sky-200/40">
+                  Reasoning and Planning
                 </h4>
-                <p className="text-sm text-slate-500 font-light leading-relaxed">
-                  How can we apply reinforcement learning and fine-tuning techniques to remote sensing MLLMs to improve their interactive planning and decision capabilities?
+                <p className="text-sm text-slate-600 font-light leading-relaxed">
+                  How can geospatial agents be enhanced to tackle complex tasks requiring multi-step reasoning, active sensing, or tool usage in dynamic environments?
                 </p>
               </div>
-              <div className="space-y-2">
-                <h4 className="font-semibold text-slate-900 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-sky-700"></span>
-                  World Models & Simulation
+              <div className="bg-slate-50 rounded-xl p-6 hover:-translate-y-1 transition-transform duration-300 border border-slate-100/50">
+                <h4 className="text-sky-900 font-semibold text-base mb-2 pb-2 border-b border-sky-200/40">
+                  Reliability and Responsibility
                 </h4>
-                <p className="text-sm text-slate-500 font-light leading-relaxed">
-                  How can world models and simulation environments be leveraged for training and evaluating geospatial reasoning agents?
+                <p className="text-sm text-slate-600 font-light leading-relaxed">
+                  How can EO agents work reliably outside their training distribution? How do we address issues of hallucination, safety, and interpretability?
                 </p>
               </div>
-              <div className="space-y-2">
-                <h4 className="font-semibold text-slate-900 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-sky-700"></span>
-                  Safety and Trustworthiness
+              <div className="bg-slate-50 rounded-xl p-6 hover:-translate-y-1 transition-transform duration-300 border border-slate-100/50">
+                <h4 className="text-sky-900 font-semibold text-base mb-2 pb-2 border-b border-sky-200/40">
+                  Practical Limitations in Deployment
                 </h4>
-                <p className="text-sm text-slate-500 font-light leading-relaxed">
-                  How can we ensure safety, trustworthiness, and interpretability in autonomous Earth observation agents?
+                <p className="text-sm text-slate-600 font-light leading-relaxed">
+                  How can models handle practical system constraints, memory limits, response time demands, and the high computational costs of planetary-scale inference?
                 </p>
               </div>
             </div>
           </div>
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-slate-100"></div>
         </section>
 
         {/* SECTION: CALL FOR PAPERS */}
-        <section id="cfp" className="space-y-8 scroll-mt-20">
+        <section id="cfp" className="space-y-8 scroll-mt-24 relative pb-12">
           <div className="space-y-4">
-            <h2 className="text-2xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-2">
+            <h2 className="text-3xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-3">
               Call for Papers
             </h2>
-            <p className="text-slate-600 leading-relaxed font-light">
-              The **Workshop on Agentic AI for Earth Observation** invites submissions from researchers at the intersection of machine learning, computer vision, remote sensing, and Earth sciences. We welcome contributions focusing on reasoning, planning, and sequential decision-making in Earth systems.
+            <p className="text-slate-600 leading-relaxed font-light text-base text-justify">
+              The **Workshop on Agentic AI for Earth Observation@NeurIPS 2026** invites submissions from researchers in machine learning pertaining to foundation models, remote sensing, and environmental sciences. We welcome contributions that explore reasoning, planning, and autonomous decision-making in complex Earth environments.
             </p>
           </div>
 
-          {/* Key Dates Table */}
+          {/* Key Dates Table (Ported exact style from FM-Wild) */}
           <div className="space-y-4">
-            <h3 className="text-lg font-serif font-semibold text-slate-800">
+            <h3 className="text-xl font-serif font-semibold text-slate-900">
               Key Dates
             </h3>
-            <div className="border border-slate-100 rounded overflow-hidden">
+            <div className="border border-slate-100 rounded overflow-hidden shadow-sm">
               <table className="w-full text-left text-sm">
                 <tbody className="divide-y divide-slate-100">
                   <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="px-6 py-3.5 font-semibold text-slate-700">Paper Submission Deadline</td>
-                    <td className="px-6 py-3.5 text-slate-600">September 2026 (TBA)</td>
+                    <td className="px-6 py-4 font-semibold text-slate-700">Paper Submission Deadline</td>
+                    <td className="px-6 py-4 text-slate-600">September 2026 (AoE, TBA)</td>
                   </tr>
                   <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="px-6 py-3.5 font-semibold text-slate-700">Author Notification</td>
-                    <td className="px-6 py-3.5 text-slate-600">October 2026 (TBA)</td>
+                    <td className="px-6 py-4 font-semibold text-slate-700">Author Notification</td>
+                    <td className="px-6 py-4 text-slate-600">October 2026 (AoE, TBA)</td>
                   </tr>
                   <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="px-6 py-3.5 font-semibold text-slate-700">Camera-Ready Deadline</td>
-                    <td className="px-6 py-3.5 text-slate-600">November 2026 (TBA)</td>
+                    <td className="px-6 py-4 font-semibold text-slate-700">Camera-Ready Deadline</td>
+                    <td className="px-6 py-4 text-slate-600">November 2026 (AoE, TBA)</td>
                   </tr>
                 </tbody>
               </table>
@@ -193,7 +185,7 @@ export default function Home() {
 
           {/* Scope List */}
           <div className="space-y-4">
-            <h3 className="text-lg font-serif font-semibold text-slate-800">
+            <h3 className="text-xl font-serif font-semibold text-slate-900">
               Scope & Topics
             </h3>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-sm text-slate-600 font-light list-disc pl-5">
@@ -210,16 +202,16 @@ export default function Home() {
 
           {/* Submission Guidelines */}
           <div className="space-y-4">
-            <h3 className="text-lg font-serif font-semibold text-slate-800">
+            <h3 className="text-xl font-serif font-semibold text-slate-900">
               Submission Guidelines
             </h3>
-            <div className="text-slate-600 leading-relaxed font-light text-sm space-y-3">
+            <div className="text-slate-600 leading-relaxed font-light text-sm space-y-4 text-justify">
               <p>
                 <strong>Format:</strong> All submissions must be a single PDF file formatted using the standard NeurIPS style files. We welcome high-quality original papers in the following two tracks:
               </p>
               <ul className="list-disc pl-5 space-y-1 text-xs">
-                <li><strong>Full Papers:</strong> Up to 8 pages (excluding references and appendices).</li>
                 <li><strong>Short Papers / Extended Abstracts:</strong> Up to 4 pages (excluding references).</li>
+                <li><strong>Full Papers:</strong> Up to 8 pages (excluding references and appendices).</li>
               </ul>
               <p>
                 <strong>Double-blind reviewing:</strong> All submissions must be anonymized and may not contain any identifying information that may violate the double-blind reviewing policy. This policy applies to any supplementary or linked material as well.
@@ -229,12 +221,13 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-slate-100"></div>
         </section>
 
         {/* SECTION: SCHEDULE */}
-        <section id="schedule" className="space-y-8 scroll-mt-20">
+        <section id="schedule" className="space-y-8 scroll-mt-24 relative pb-12">
           <div className="space-y-2">
-            <h2 className="text-2xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-2">
+            <h2 className="text-3xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-3">
               Schedule
             </h2>
             <p className="text-slate-500 text-sm font-light">
@@ -246,8 +239,8 @@ export default function Home() {
             <table className="w-full text-left text-sm">
               <thead className="bg-slate-50 text-slate-700 border-b border-slate-100 font-semibold">
                 <tr>
-                  <th className="px-6 py-3">Time</th>
-                  <th className="px-6 py-3">Topic / Activity</th>
+                  <th className="px-6 py-3.5">Time</th>
+                  <th className="px-6 py-3.5">Topic / Activity</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
@@ -263,15 +256,16 @@ export default function Home() {
               </tbody>
             </table>
           </div>
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-slate-100"></div>
         </section>
 
         {/* SECTION: SPEAKERS */}
-        <section id="speakers" className="space-y-12 scroll-mt-20">
+        <section id="speakers" className="space-y-12 scroll-mt-24 relative pb-12">
           
-          {/* Keynote Speakers */}
-          <div className="space-y-6">
+          {/* Keynote Speakers (Ported exact 5-column headshot grid from FM-Wild) */}
+          <div className="space-y-8">
             <div className="space-y-2">
-              <h2 className="text-2xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-2">
+              <h2 className="text-3xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-3">
                 Invited Keynote Speakers
               </h2>
               <p className="text-slate-500 text-sm font-light">
@@ -279,52 +273,58 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-6">
+            {/* Circular Headshots Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-6 gap-y-10">
               {KEYNOTE_SPEAKERS.map((speaker, idx) => (
-                <div key={idx} className="flex flex-col sm:flex-row gap-6 p-4 border border-slate-100 rounded-lg hover:border-slate-200 transition-all">
+                <div key={idx} className="text-center space-y-3 group">
                   
-                  {/* Portrait */}
-                  {speaker.avatar ? (
-                    <img 
-                      src={speaker.avatar} 
-                      alt={speaker.name} 
-                      className="w-20 h-20 rounded-full object-cover border border-slate-100 shrink-0 mx-auto sm:mx-0"
-                    />
-                  ) : (
-                    <div className="w-20 h-20 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl shrink-0 border border-slate-100 mx-auto sm:mx-0">
-                      {speaker.name.split(' ').map(n => n[0]).join('')}
-                    </div>
-                  )}
+                  {/* Portrait Container */}
+                  <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-slate-100 group-hover:border-sky-500 transition-colors duration-300 shadow-sm">
+                    {speaker.avatar ? (
+                      <img 
+                        src={speaker.avatar} 
+                        alt={speaker.name} 
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
+                        {speaker.name.split(' ').map(n => n[0]).join('')}
+                      </div>
+                    )}
+                  </div>
 
                   {/* Details */}
-                  <div className="space-y-2 flex-grow text-center sm:text-left">
-                    <div className="space-y-0.5">
-                      <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
-                        <h3 className="text-lg font-serif font-bold text-slate-900">
-                          {speaker.name}
-                        </h3>
-                        <Badge className="bg-slate-50 text-slate-600 border-slate-200 text-[10px] uppercase tracking-wider font-semibold hover:bg-slate-100">
-                          {speaker.status.split(' ')[0]}
-                        </Badge>
-                      </div>
-                      <p className="text-sm font-medium text-slate-700">
-                        {speaker.role} — <span className="text-slate-500">{speaker.affiliation}</span>
-                      </p>
-                    </div>
-
-                    <div className="text-xs text-slate-500 leading-relaxed font-light">
-                      <p className={expandedSpeaker === speaker.name ? "" : "line-clamp-2"}>
-                        {speaker.bio}
-                      </p>
-                      <button 
-                        onClick={() => toggleSpeakerBio(speaker.name)}
-                        className="inline-flex items-center gap-1 text-sky-800 font-medium mt-1 hover:text-sky-950 transition-colors"
-                      >
-                        {expandedSpeaker === speaker.name ? "Read Less" : "Read Full Bio"} 
-                        <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${expandedSpeaker === speaker.name ? "rotate-180" : ""}`} />
-                      </button>
-                    </div>
+                  <div className="space-y-1">
+                    {speaker.url ? (
+                      <a href={speaker.url} target="_blank" rel="noopener noreferrer" className="hover:text-sky-800 transition-colors">
+                        <h4 className="text-sm font-bold text-slate-900 leading-tight">{speaker.name}</h4>
+                      </a>
+                    ) : (
+                      <h4 className="text-sm font-bold text-slate-900 leading-tight">{speaker.name}</h4>
+                    )}
+                    <p className="text-xs text-slate-500 font-light leading-tight">{speaker.affiliation}</p>
+                    <span className="inline-block text-[9px] bg-slate-50 text-slate-500 px-1.5 py-0.5 rounded border border-slate-100/60 uppercase tracking-wider font-semibold">
+                      {speaker.status.split(' ')[0]}
+                    </span>
                   </div>
+
+                  {/* Bio Button (Triggers inline bio drawer) */}
+                  <div>
+                    <button 
+                      onClick={() => toggleSpeakerBio(speaker.name)}
+                      className="inline-flex items-center gap-0.5 text-[10px] text-sky-800 font-semibold hover:text-sky-950 transition-colors"
+                    >
+                      {expandedSpeaker === speaker.name ? "Hide Bio" : "View Bio"} 
+                      <ChevronDown className={`w-2.5 h-3 transition-transform duration-200 ${expandedSpeaker === speaker.name ? "rotate-180" : ""}`} />
+                    </button>
+                  </div>
+
+                  {/* Inline Bio Drawer */}
+                  {expandedSpeaker === speaker.name && (
+                    <div className="col-span-full text-left bg-slate-50 border border-slate-100 p-4 rounded-lg text-xs text-slate-600 font-light leading-relaxed mt-2 animate-fade-in">
+                      {speaker.bio}
+                    </div>
+                  )}
 
                 </div>
               ))}
@@ -342,42 +342,51 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-6 gap-y-10">
               {PANEL_SPEAKERS.map((speaker, idx) => (
-                <div key={idx} className="flex flex-col sm:flex-row gap-6 p-4 border border-slate-100 rounded-lg">
-                  {speaker.avatar ? (
-                    <img 
-                      src={speaker.avatar} 
-                      alt={speaker.name} 
-                      className="w-20 h-20 rounded-full object-cover border border-slate-100 shrink-0 mx-auto sm:mx-0"
-                    />
-                  ) : (
-                    <div className="w-20 h-20 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl shrink-0 border border-slate-100 mx-auto sm:mx-0">
-                      {speaker.name.split(' ').map(n => n[0]).join('')}
+                <div key={idx} className="text-center space-y-3 group">
+                  <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-slate-100 group-hover:border-sky-500 transition-colors duration-300 shadow-sm">
+                    {speaker.avatar ? (
+                      <img 
+                        src={speaker.avatar} 
+                        alt={speaker.name} 
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
+                        {speaker.name.split(' ').map(n => n[0]).join('')}
+                      </div>
+                    )}
+                  </div>
+                  <div className="space-y-1">
+                    <h4 className="text-sm font-bold text-slate-900 leading-tight">{speaker.name}</h4>
+                    <p className="text-xs text-slate-500 font-light leading-tight">{speaker.affiliation}</p>
+                  </div>
+                  <div>
+                    <button 
+                      onClick={() => toggleSpeakerBio(speaker.name)}
+                      className="inline-flex items-center gap-0.5 text-[10px] text-sky-800 font-semibold hover:text-sky-950 transition-colors"
+                    >
+                      {expandedSpeaker === speaker.name ? "Hide Bio" : "View Bio"} 
+                      <ChevronDown className={`w-2.5 h-3 transition-transform duration-200 ${expandedSpeaker === speaker.name ? "rotate-180" : ""}`} />
+                    </button>
+                  </div>
+                  {expandedSpeaker === speaker.name && (
+                    <div className="col-span-full text-left bg-slate-50 border border-slate-100 p-4 rounded-lg text-xs text-slate-600 font-light leading-relaxed mt-2 animate-fade-in">
+                      {speaker.bio}
                     </div>
                   )}
-                  <div className="space-y-1 flex-grow text-center sm:text-left">
-                    <h4 className="text-base font-serif font-bold text-slate-900">
-                      {speaker.name}
-                    </h4>
-                    <p className="text-sm font-medium text-slate-700">
-                      {speaker.role} — <span className="text-slate-500">{speaker.affiliation}</span>
-                    </p>
-                    <p className="text-xs text-slate-500 leading-relaxed font-light pt-1">
-                      {speaker.bio}
-                    </p>
-                  </div>
                 </div>
               ))}
             </div>
           </div>
-
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-slate-100"></div>
         </section>
 
         {/* SECTION: ORGANIZERS */}
-        <section id="organizers" className="space-y-8 scroll-mt-20 pt-12 border-t border-slate-100">
+        <section id="organizers" className="space-y-8 scroll-mt-24">
           <div className="space-y-2">
-            <h2 className="text-2xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-2">
+            <h2 className="text-3xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-3">
               Workshop Organizers
             </h2>
             <p className="text-slate-500 text-sm font-light">
@@ -385,53 +394,44 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {/* Circular Headshots Grid (Exactly like FM-Wild) */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-6 gap-y-10">
             {ORGANIZERS.map((org, idx) => (
-              <div key={idx} className="flex gap-4 p-4 border border-slate-100 rounded-lg bg-slate-50/30">
-                {/* Avatar */}
-                {org.avatar ? (
-                  <img 
-                    src={org.avatar} 
-                    alt={org.name} 
-                    className="w-12 h-12 rounded-full object-cover border border-slate-100 shrink-0"
-                  />
-                ) : (
-                  <div className="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 font-serif font-semibold text-sm shrink-0 border border-slate-100">
-                    {org.name.split(' ').map(n => n[0]).join('')}
-                  </div>
-                )}
+              <div key={idx} className="text-center space-y-3 group">
                 
-                <div className="space-y-2 flex-grow">
-                  <div className="space-y-0.5">
-                    <h3 className="text-sm font-bold text-slate-900">
-                      {org.name}
-                    </h3>
-                    <p className="text-xs text-sky-800 font-medium">
-                      {org.affiliation}
-                    </p>
-                  </div>
-                  
-                  <p className="text-[11px] text-slate-500 leading-relaxed font-light line-clamp-3">
-                    {org.bio}
-                  </p>
-
-                  <div className="flex gap-3 pt-1 text-[11px] font-medium border-t border-slate-100/60">
-                    <a 
-                      href={`mailto:${org.email}`} 
-                      className="inline-flex items-center gap-1 text-slate-500 hover:text-sky-800 transition-colors"
-                    >
-                      <Mail className="w-3 h-3" /> Email
-                    </a>
-                    <a 
-                      href={org.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="inline-flex items-center gap-1 text-slate-500 hover:text-sky-800 transition-colors"
-                    >
-                      <Globe className="w-3 h-3" /> Website
-                    </a>
-                  </div>
+                {/* Portrait Container */}
+                <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-slate-100 group-hover:border-sky-500 transition-colors duration-300 shadow-sm">
+                  {org.avatar ? (
+                    <img 
+                      src={org.avatar} 
+                      alt={org.name} 
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
+                      {org.name.split(' ').map(n => n[0]).join('')}
+                    </div>
+                  )}
                 </div>
+
+                {/* Details */}
+                <div className="space-y-1">
+                  <a href={org.url} target="_blank" rel="noopener noreferrer" className="hover:text-sky-800 transition-colors">
+                    <h4 className="text-sm font-bold text-slate-900 leading-tight">{org.name}</h4>
+                  </a>
+                  <p className="text-xs text-slate-500 font-light leading-tight">{org.affiliation}</p>
+                </div>
+
+                {/* Quick Contact Icons */}
+                <div className="flex justify-center gap-3 pt-1 text-slate-400">
+                  <a href={`mailto:${org.email}`} className="hover:text-sky-800 transition-colors">
+                    <Mail className="w-3.5 h-3.5" />
+                  </a>
+                  <a href={org.url} target="_blank" rel="noopener noreferrer" className="hover:text-sky-800 transition-colors">
+                    <Globe className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+
               </div>
             ))}
           </div>

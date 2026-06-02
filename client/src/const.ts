@@ -38,21 +38,27 @@ export const KEYNOTE_SPEAKERS: Speaker[] = [
     role: "Professor & Team Director",
     affiliation: "The University of Tokyo / RIKEN",
     status: "Confirmed in-person (Sydney preferred)",
-    bio: "Naoto Yokoya is a Professor at The University of Tokyo and Team Director at RIKEN. His research focuses on visual and spatial intelligence, developing intelligent systems that understand and reason about the physical and semantic structure of the real world from multimodal observations. His work lies at the intersection of computer vision, machine learning, remote sensing, and data fusion, with particular emphasis on Earth observation as a socially impactful domain for advancing AI. He has made influential contributions to hyperspectral imaging, multimodal data fusion, geospatial foundation models, disaster monitoring, and AI-driven Earth understanding. His recent work explores multimodal reasoning systems, geospatial generative AI, and foundation models for large-scale environmental and disaster applications. He is widely recognized as a leading researcher in geospatial AI and remote sensing machine learning."
+    bio: "Naoto Yokoya is a Professor at The University of Tokyo and Team Director at RIKEN. His research focuses on visual and spatial intelligence, developing intelligent systems that understand and reason about the physical and semantic structure of the real world from multimodal observations. His work lies at the intersection of computer vision, machine learning, remote sensing, and data fusion, with particular emphasis on Earth observation as a socially impactful domain for advancing AI. He has made influential contributions to hyperspectral imaging, multimodal data fusion, geospatial foundation models, disaster monitoring, and AI-driven Earth understanding. His recent work explores multimodal reasoning systems, geospatial generative AI, and foundation models for large-scale environmental and disaster applications. He is widely recognized as a leading researcher in geospatial AI and remote sensing machine learning.",
+    url: "https://naotoyokoya.com/",
+    avatar: "https://naotoyokoya.com/assets/img/yokoya24_390.webp"
   },
   {
     name: "Gui-Song Xia",
     role: "Hongyi Distinguished Professor & Acting Vice Dean",
     affiliation: "Wuhan University",
     status: "Confirmed in-person (Paris or Sydney)",
-    bio: "Gui-Song Xia is a Hongyi Distinguished Professor at Wuhan University and currently serves as Acting Vice Dean of the School of Artificial Intelligence. His research focuses on computer vision, pattern recognition, photogrammetry, and remote sensing image understanding, with particular interests in aerial image analysis, geometric vision, and multimodal AI. He has published extensively in leading venues such as CVPR, ICCV, TPAMI, IJCV, and IEEE TGRS, and has contributed influential datasets and benchmarks widely used in Earth observation research. He is also known for advancing AI methods for aerial object detection, scene understanding, and geospatial intelligence."
+    bio: "Gui-Song Xia is a Hongyi Distinguished Professor at Wuhan University and currently serves as Acting Vice Dean of the School of Artificial Intelligence. His research focuses on computer vision, pattern recognition, photogrammetry, and remote sensing image understanding, with particular interests in aerial image analysis, geometric vision, and multimodal AI. He has published extensively in leading venues such as CVPR, ICCV, TPAMI, IJCV, and IEEE TGRS, and has contributed influential datasets and benchmarks widely used in Earth observation research. He is also known for advancing AI methods for aerial object detection, scene understanding, and geospatial intelligence.",
+    url: "http://www.captain-whu.com/en/person/xiaguisong.html",
+    avatar: "http://www.captain-whu.com/assets/xiaguisong-avatar.hRv1DBRc.jpg"
   },
   {
     name: "Salman Khan",
     role: "Associate Professor & Adjunct Faculty",
     affiliation: "MBZUAI / Australian National University",
     status: "Confirmed in-person (Sydney)",
-    bio: "Salman Khan is an Associate Professor in the Computer Vision Department at Mohamed bin Zayed University of Artificial Intelligence (MBZUAI) and an adjunct faculty member at the Australian National University. His research lies at the intersection of vision, language, and learning, with major contributions to multimodal learning, vision-language models, continual learning, open-world recognition, and robust AI systems. More recently, his work has increasingly focused on geospatial AI, AI for climate science, and Earth observation foundation models, including multimodal reasoning systems for remote sensing and environmental monitoring. He has published extensively in top AI venues including CVPR, ICCV, NeurIPS, ICML, and ICLR, and has contributed to influential projects such as GeoChat, Video-ChatGPT, and multilingual multimodal foundation models."
+    bio: "Salman Khan is an Associate Professor in the Computer Vision Department at Mohamed bin Zayed University of Artificial Intelligence (MBZUAI) and an adjunct faculty member at the Australian National University. His research lies at the intersection of vision, language, and learning, with major contributions to multimodal learning, vision-language models, continual learning, open-world recognition, and robust AI systems. More recently, his work has increasingly focused on geospatial AI, AI for climate science, and Earth observation foundation models, including multimodal reasoning systems for remote sensing and environmental monitoring. He has published extensively in top AI venues including CVPR, ICCV, NeurIPS, ICML, and ICLR, and has contributed to influential projects such as GeoChat, Video-ChatGPT, and multilingual multimodal foundation models.",
+    url: "https://salman-h-khan.github.io/",
+    avatar: "https://salman-h-khan.github.io/images/salman.png"
   },
   {
     name: "Xiao Xiang Zhu",
@@ -67,7 +73,9 @@ export const KEYNOTE_SPEAKERS: Speaker[] = [
     role: "Associate Professor",
     affiliation: "EPFL",
     status: "Tentative (Paris in-person)",
-    bio: "Devis Tuia (IEEE Fellow) is an Associate Professor at École Polytechnique Fédérale de Lausanne, where he leads the Environmental Computational Science and Earth Observation Laboratory (ECEO). His research focuses on machine learning for Earth observation, geospatial foundation models, environmental monitoring, and AI for sustainability. He has made influential contributions to domain adaptation, self-supervised learning, weakly supervised learning, and foundation models for remote sensing. More recently, his work explores multimodal and generative AI systems for Earth observation, with applications in biodiversity monitoring, ecosystem understanding, and climate-related challenges."
+    bio: "Devis Tuia (IEEE Fellow) is an Associate Professor at École Polytechnique Fédérale de Lausanne, where he leads the Environmental Computational Science and Earth Observation Laboratory (ECEO). His research focuses on machine learning for Earth observation, geospatial foundation models, environmental monitoring, and AI for sustainability. He has made influential contributions to domain adaptation, self-supervised learning, weakly supervised learning, and foundation models for remote sensing. More recently, his work explores multimodal and generative AI systems for Earth observation, with applications in biodiversity monitoring, ecosystem understanding, and climate-related challenges.",
+    url: "https://people.epfl.ch/devis.tuia?lang=en",
+    avatar: "https://people.epfl.ch/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTI0MjAsImV4cCI6IjIwMjYtMDYtMDNUMTI6Mjg6MDQuNzI0WiIsInB1ciI6ImJsb2JfaWQifX0=--0d710c27f1816c5d641c39dc6b89b3d2d55f04a9/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOlszMDAsMzAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--0e4cac8384c27a8ce16cc743e4688ad1c990158e/150680.jpg?lang=en"
   }
 ];
 
@@ -95,14 +103,16 @@ export const ORGANIZERS: Organizer[] = [
     affiliation: "University of Exeter",
     email: "t.huang4@exeter.ac.uk",
     url: "https://tianjinyellow.github.io/",
-    bio: "Tianjin Huang is a Lecturer (Assistant Professor) at University of Exeter whose research focuses on building reliable and efficient AI systems for real-world applications. His research interests include reliable foundation models, with emphasis on efficient training, tuning, and compression under imperfect data conditions; agentic AI for robust and generalizable autonomous systems; and AI for science and biomedicine, particularly enabling large models in data-scarce and high-stakes domains. His recent work also explores multimodal foundation models and intelligent AI systems for scientific and geospatial applications."
+    bio: "Tianjin Huang is a Lecturer (Assistant Professor) at University of Exeter whose research focuses on building reliable and efficient AI systems for real-world applications. His research interests include reliable foundation models, with emphasis on efficient training, tuning, and compression under imperfect data conditions; agentic AI for robust and generalizable autonomous systems; and AI for science and biomedicine, particularly enabling large models in data-scarce and high-stakes domains. His recent work also explores multimodal foundation models and intelligent AI systems for scientific and geospatial applications.",
+    avatar: "https://tianjinyellow.github.io/imgs/htj.jpg"
   },
   {
     name: "Ronny Hänsch",
     affiliation: "German Aerospace Center (DLR)",
     email: "rww.haensch@gmail.com",
     url: "http://www.rhaensch.de/",
-    bio: "Ronny Hänsch leads the Machine Learning Team in the Signal Processing Group of the SAR Technology Department at the Microwave and Radar Institute of the German Aerospace Center (DLR). His research interest is computer vision and machine learning with a focus on remote sensing. He has extensive experience in organizing remote sensing community competitions, serves as the GRSS representative within SpaceNet, and was the technical lead of the SpaceNet 8 Challenge. Ronny has served as Chair of the EarthVision Workshop at CVPR (2019–2026), Co-Chair of the Machine Learning for Remote Sensing Workshop at ICLR 2023, Co-Chair of the Machine Vision for Earth Observation and Environment Monitoring (MVEO) Workshop at BMVC 2023 and 2024, and Co-Chair of the 1st Workshop on Computer Vision for Earth Observation (CV4EO) Applications at WACV 2024."
+    bio: "Ronny Hänsch leads the Machine Learning Team in the Signal Processing Group of the SAR Technology Department at the Microwave and Radar Institute of the German Aerospace Center (DLR). His research interest is computer vision and machine learning with a focus on remote sensing. He has extensive experience in organizing remote sensing community competitions, serves as the GRSS representative within SpaceNet, and was the technical lead of the SpaceNet 8 Challenge. Ronny has served as Chair of the EarthVision Workshop at CVPR (2019–2026), Co-Chair of the Machine Learning for Remote Sensing Workshop at ICLR 2023, Co-Chair of the Machine Vision for Earth Observation and Environment Monitoring (MVEO) Workshop at BMVC 2023 and 2024, and Co-Chair of the 1st Workshop on Computer Vision for Earth Observation (CV4EO) Applications at WACV 2024.",
+    avatar: "http://www.rhaensch.de/images/rhaensch.png"
   },
   {
     name: "Evan Shelhamer",
@@ -123,7 +133,8 @@ export const ORGANIZERS: Organizer[] = [
     affiliation: "Tsinghua University",
     email: "liweijia@sz.tsinghua.edu.cn",
     url: "https://liweijia.github.io/",
-    bio: "Weijia Li is an Associate Professor at Tsinghua University working on computer vision, deep learning, and urban remote sensing. Her recent research focuses on large multimodal models, generative AI, and AI agents for geospatial understanding. She has contributed to influential works on cross-view geo-localization, multimodal reasoning benchmarks, synthetic image understanding, and urban scene intelligence, with publications in top-tier venues including CVPR, ICCV, NeurIPS, ICLR, and ICML."
+    bio: "Weijia Li is an Associate Professor at Tsinghua University working on computer vision, deep learning, and urban remote sensing. Her recent research focuses on large multimodal models, generative AI, and AI agents for geospatial understanding. She has contributed to influential works on cross-view geo-localization, multimodal reasoning benchmarks, synthetic image understanding, and urban scene intelligence, with publications in top-tier venues including CVPR, ICCV, NeurIPS, ICLR, and ICML.",
+    avatar: "https://liweijia.github.io/assets/img/liweijia-2.png"
   }
 ];
 
