@@ -148,15 +148,15 @@ export default function Home() {
                 <tbody className="divide-y divide-slate-100">
                   <tr className="hover:bg-slate-50/50 transition-colors">
                     <td className="px-6 py-4 font-semibold text-slate-700">Paper Submission Deadline</td>
-                    <td className="px-6 py-4 text-slate-600">September 2026 (AoE, TBA)</td>
+                    <td className="px-6 py-4 text-slate-600">August 29, 2026 (AoE)</td>
                   </tr>
                   <tr className="hover:bg-slate-50/50 transition-colors">
                     <td className="px-6 py-4 font-semibold text-slate-700">Author Notification</td>
-                    <td className="px-6 py-4 text-slate-600">October 2026 (AoE, TBA)</td>
+                    <td className="px-6 py-4 text-slate-600">September 29, 2026 (AoE)</td>
                   </tr>
                   <tr className="hover:bg-slate-50/50 transition-colors">
                     <td className="px-6 py-4 font-semibold text-slate-700">Camera-Ready Deadline</td>
-                    <td className="px-6 py-4 text-slate-600">November 2026 (AoE, TBA)</td>
+                    <td className="px-6 py-4 text-slate-600">October 20, 2026 (AoE, TBA)</td>
                   </tr>
                 </tbody>
               </table>
@@ -245,7 +245,7 @@ export default function Home() {
         {/* SECTION: SPEAKERS */}
         <section id="speakers" className="space-y-12 scroll-mt-24 relative pb-12">
           
-          {/* Invited Speakers (Merged Keynote & Panel) */}
+          {/* Invited Speakers */}
           <div className="space-y-8">
             <div className="space-y-2">
               <h2 className="text-3xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-3">
