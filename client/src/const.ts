@@ -66,6 +66,7 @@ export const KEYNOTE_SPEAKERS: Speaker[] = [
     affiliation: "Technical University of Munich",
     status: "Confirmed (Paris in-person, Sydney online)",
     bio: "Xiao Xiang Zhu (IEEE Fellow) is a Full Professor and Chair of Data Science in Earth Observation at Technical University of Munich. She is internationally recognized for her pioneering contributions to AI for Earth observation, multimodal geospatial foundation models, SAR image analysis, and large-scale urban Earth monitoring. Her research lies at the intersection of machine learning, remote sensing, and geospatial data science, with recent work focusing on foundation models and AI-driven Earth intelligence systems.",
+    url: "https://www.asg.ed.tum.de/sipeo/team/zhu/",
     avatar: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493919263/9DrfZuSabAu7vok4PSS7EX/speaker_xiaoxiang-7jKQfiegim8VGSYSxqk3i3.webp"
   },
   {
@@ -85,7 +86,8 @@ export const PANEL_SPEAKERS: Speaker[] = [
     role: "Lecturer in Artificial Intelligence",
     affiliation: "University of Bristol",
     status: "Confirmed in-person (Sydney preferred)",
-    bio: "Mengyue Yang is a Lecturer in Artificial Intelligence at the University of Bristol. Her research focuses on causality, reinforcement learning, multi-agent systems, world models, and large language model agents. She received her PhD in Computer Science from University College London, supervised by Professor Jun Wang. Her work has been published in leading AI venues including NeurIPS, ICML, ICLR, KDD, CVPR, SIGIR, and AAAI. She was selected for the AAAI 2026 New Faculty Highlights program and named a 2024 Rising Star in AI by KAUST."
+    bio: "Mengyue Yang is a Lecturer in Artificial Intelligence at the University of Bristol. Her research focuses on causality, reinforcement learning, multi-agent systems, world models, and large language model agents. She received her PhD in Computer Science from University College London, supervised by Professor Jun Wang. Her work has been published in leading AI venues including NeurIPS, ICML, ICLR, KDD, CVPR, SIGIR, and AAAI. She was selected for the AAAI 2026 New Faculty Highlights program and named a 2024 Rising Star in AI by KAUST.",
+    url: "https://ymy4323460.github.io/ymy4323460.github.io/"
   }
 ];
 

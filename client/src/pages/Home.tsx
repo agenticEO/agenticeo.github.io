@@ -1,14 +1,7 @@
-import { useState } from "react";
 import { 
-  Calendar, 
-  MapPin, 
   Mail, 
-  ExternalLink, 
-  ArrowRight, 
-  ChevronDown,
   Globe
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { 
   KEYNOTE_SPEAKERS, 
@@ -18,20 +11,10 @@ import {
 } from "@/const";
 
 export default function Home() {
-  const [expandedSpeaker, setExpandedSpeaker] = useState<string | null>(null);
-
-  const toggleSpeakerBio = (name: string) => {
-    if (expandedSpeaker === name) {
-      setExpandedSpeaker(null);
-    } else {
-      setExpandedSpeaker(name);
-    }
-  };
-
   return (
     <div className="min-h-screen bg-white text-slate-900 selection:bg-slate-100 selection:text-slate-900 scroll-smooth font-sans antialiased">
       
-      {/* HEADER SECTION (Ported exact style/colors from FM-Wild) */}
+      {/* HEADER SECTION */}
       <header className="relative bg-slate-950 text-white overflow-hidden py-24 md:py-32 text-center">
         {/* Background Image with Dark Overlay */}
         <div className="absolute inset-0 z-0 opacity-40">
@@ -63,7 +46,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* FIXED NAVBAR (Ported exact layout/behavior from FM-Wild) */}
+      {/* FIXED NAVBAR */}
       <nav className="bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50 py-4 shadow-sm">
         <div className="container max-w-4xl flex flex-col sm:flex-row justify-between items-center gap-4">
           <a href="#" className="font-serif font-bold text-base md:text-lg text-slate-900 hover:text-sky-800 transition-colors">
@@ -79,7 +62,7 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* CONTINUOUS SINGLE PAGE FLOW (Exact section styling from FM-Wild) */}
+      {/* CONTINUOUS SINGLE PAGE FLOW */}
       <main className="container max-w-4xl py-16 space-y-24">
         
         {/* SECTION: ABOUT */}
@@ -101,7 +84,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Key Problems Grid (Exactly like FM-Wild's About questions-grid) */}
+          {/* Key Problems Grid */}
           <div className="space-y-6 pt-4">
             <h3 className="text-xl font-serif font-semibold text-slate-900">
               Key Problems We Aim to Address
@@ -155,7 +138,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Key Dates Table (Ported exact style from FM-Wild) */}
+          {/* Key Dates Table */}
           <div className="space-y-4">
             <h3 className="text-xl font-serif font-semibold text-slate-900">
               Key Dates
@@ -262,7 +245,7 @@ export default function Home() {
         {/* SECTION: SPEAKERS */}
         <section id="speakers" className="space-y-12 scroll-mt-24 relative pb-12">
           
-          {/* Keynote Speakers (Ported exact 5-column headshot grid from FM-Wild) */}
+          {/* Keynote Speakers */}
           <div className="space-y-8">
             <div className="space-y-2">
               <h2 className="text-3xl font-serif font-bold text-slate-900 border-b border-slate-100 pb-3">
@@ -281,50 +264,48 @@ export default function Home() {
                   {/* Portrait Container */}
                   <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-slate-100 group-hover:border-sky-500 transition-colors duration-300 shadow-sm">
                     {speaker.avatar ? (
-                      <img 
-                        src={speaker.avatar} 
-                        alt={speaker.name} 
-                        className="w-full h-full object-cover"
-                      />
+                      speaker.url ? (
+                        <a href={speaker.url} target="_blank" rel="noopener noreferrer">
+                          <img 
+                            src={speaker.avatar} 
+                            alt={speaker.name} 
+                            className="w-full h-full object-cover"
+                          />
+                        </a>
+                      ) : (
+                        <img 
+                          src={speaker.avatar} 
+                          alt={speaker.name} 
+                          className="w-full h-full object-cover"
+                        />
+                      )
                     ) : (
-                      <div className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
-                        {speaker.name.split(' ').map(n => n[0]).join('')}
-                      </div>
+                      speaker.url ? (
+                        <a href={speaker.url} target="_blank" rel="noopener noreferrer" className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
+                          {speaker.name.split(' ').map(n => n[0]).join('')}
+                        </a>
+                      ) : (
+                        <div className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
+                          {speaker.name.split(' ').map(n => n[0]).join('')}
+                        </div>
+                      )
                     )}
                   </div>
 
                   {/* Details */}
                   <div className="space-y-1">
                     {speaker.url ? (
-                      <a href={speaker.url} target="_blank" rel="noopener noreferrer" className="hover:text-sky-800 transition-colors">
+                      <a href={speaker.url} target="_blank" rel="noopener noreferrer" className="hover:text-sky-800 hover:underline transition-all">
                         <h4 className="text-sm font-bold text-slate-900 leading-tight">{speaker.name}</h4>
                       </a>
                     ) : (
                       <h4 className="text-sm font-bold text-slate-900 leading-tight">{speaker.name}</h4>
                     )}
                     <p className="text-xs text-slate-500 font-light leading-tight">{speaker.affiliation}</p>
-                    <span className="inline-block text-[9px] bg-slate-50 text-slate-500 px-1.5 py-0.5 rounded border border-slate-100/60 uppercase tracking-wider font-semibold">
+                    <span className="inline-block text-[9px] bg-slate-50 text-slate-500 px-1.5 py-0.5 rounded border border-slate-100/60 uppercase tracking-wider font-semibold mt-1">
                       {speaker.status.split(' ')[0]}
                     </span>
                   </div>
-
-                  {/* Bio Button (Triggers inline bio drawer) */}
-                  <div>
-                    <button 
-                      onClick={() => toggleSpeakerBio(speaker.name)}
-                      className="inline-flex items-center gap-0.5 text-[10px] text-sky-800 font-semibold hover:text-sky-950 transition-colors"
-                    >
-                      {expandedSpeaker === speaker.name ? "Hide Bio" : "View Bio"} 
-                      <ChevronDown className={`w-2.5 h-3 transition-transform duration-200 ${expandedSpeaker === speaker.name ? "rotate-180" : ""}`} />
-                    </button>
-                  </div>
-
-                  {/* Inline Bio Drawer */}
-                  {expandedSpeaker === speaker.name && (
-                    <div className="col-span-full text-left bg-slate-50 border border-slate-100 p-4 rounded-lg text-xs text-slate-600 font-light leading-relaxed mt-2 animate-fade-in">
-                      {speaker.bio}
-                    </div>
-                  )}
 
                 </div>
               ))}
@@ -347,35 +328,43 @@ export default function Home() {
                 <div key={idx} className="text-center space-y-3 group">
                   <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-slate-100 group-hover:border-sky-500 transition-colors duration-300 shadow-sm">
                     {speaker.avatar ? (
-                      <img 
-                        src={speaker.avatar} 
-                        alt={speaker.name} 
-                        className="w-full h-full object-cover"
-                      />
+                      speaker.url ? (
+                        <a href={speaker.url} target="_blank" rel="noopener noreferrer">
+                          <img 
+                            src={speaker.avatar} 
+                            alt={speaker.name} 
+                            className="w-full h-full object-cover"
+                          />
+                        </a>
+                      ) : (
+                        <img 
+                          src={speaker.avatar} 
+                          alt={speaker.name} 
+                          className="w-full h-full object-cover"
+                        />
+                      )
                     ) : (
-                      <div className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
-                        {speaker.name.split(' ').map(n => n[0]).join('')}
-                      </div>
+                      speaker.url ? (
+                        <a href={speaker.url} target="_blank" rel="noopener noreferrer" className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
+                          {speaker.name.split(' ').map(n => n[0]).join('')}
+                        </a>
+                      ) : (
+                        <div className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
+                          {speaker.name.split(' ').map(n => n[0]).join('')}
+                        </div>
+                      )
                     )}
                   </div>
                   <div className="space-y-1">
-                    <h4 className="text-sm font-bold text-slate-900 leading-tight">{speaker.name}</h4>
+                    {speaker.url ? (
+                      <a href={speaker.url} target="_blank" rel="noopener noreferrer" className="hover:text-sky-800 hover:underline transition-all">
+                        <h4 className="text-sm font-bold text-slate-900 leading-tight">{speaker.name}</h4>
+                      </a>
+                    ) : (
+                      <h4 className="text-sm font-bold text-slate-900 leading-tight">{speaker.name}</h4>
+                    )}
                     <p className="text-xs text-slate-500 font-light leading-tight">{speaker.affiliation}</p>
                   </div>
-                  <div>
-                    <button 
-                      onClick={() => toggleSpeakerBio(speaker.name)}
-                      className="inline-flex items-center gap-0.5 text-[10px] text-sky-800 font-semibold hover:text-sky-950 transition-colors"
-                    >
-                      {expandedSpeaker === speaker.name ? "Hide Bio" : "View Bio"} 
-                      <ChevronDown className={`w-2.5 h-3 transition-transform duration-200 ${expandedSpeaker === speaker.name ? "rotate-180" : ""}`} />
-                    </button>
-                  </div>
-                  {expandedSpeaker === speaker.name && (
-                    <div className="col-span-full text-left bg-slate-50 border border-slate-100 p-4 rounded-lg text-xs text-slate-600 font-light leading-relaxed mt-2 animate-fade-in">
-                      {speaker.bio}
-                    </div>
-                  )}
                 </div>
               ))}
             </div>
@@ -394,7 +383,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Circular Headshots Grid (Exactly like FM-Wild) */}
+          {/* Circular Headshots Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-6 gap-y-10">
             {ORGANIZERS.map((org, idx) => (
               <div key={idx} className="text-center space-y-3 group">
@@ -402,21 +391,37 @@ export default function Home() {
                 {/* Portrait Container */}
                 <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-slate-100 group-hover:border-sky-500 transition-colors duration-300 shadow-sm">
                   {org.avatar ? (
-                    <img 
-                      src={org.avatar} 
-                      alt={org.name} 
-                      className="w-full h-full object-cover"
-                    />
+                    org.url ? (
+                      <a href={org.url} target="_blank" rel="noopener noreferrer">
+                        <img 
+                          src={org.avatar} 
+                          alt={org.name} 
+                          className="w-full h-full object-cover"
+                        />
+                      </a>
+                    ) : (
+                      <img 
+                        src={org.avatar} 
+                        alt={org.name} 
+                        className="w-full h-full object-cover"
+                      />
+                    )
                   ) : (
-                    <div className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
-                      {org.name.split(' ').map(n => n[0]).join('')}
-                    </div>
+                    org.url ? (
+                      <a href={org.url} target="_blank" rel="noopener noreferrer" className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
+                        {org.name.split(' ').map(n => n[0]).join('')}
+                      </a>
+                    ) : (
+                      <div className="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 font-serif font-semibold text-xl">
+                        {org.name.split(' ').map(n => n[0]).join('')}
+                      </div>
+                    )
                   )}
                 </div>
 
                 {/* Details */}
                 <div className="space-y-1">
-                  <a href={org.url} target="_blank" rel="noopener noreferrer" className="hover:text-sky-800 transition-colors">
+                  <a href={org.url} target="_blank" rel="noopener noreferrer" className="hover:text-sky-800 hover:underline transition-all">
                     <h4 className="text-sm font-bold text-slate-900 leading-tight">{org.name}</h4>
                   </a>
                   <p className="text-xs text-slate-500 font-light leading-tight">{org.affiliation}</p>
