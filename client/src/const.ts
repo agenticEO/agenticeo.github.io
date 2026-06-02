@@ -77,10 +77,7 @@ export const INVITED_SPEAKERS: Speaker[] = [
     bio: "Devis Tuia (IEEE Fellow) is an Associate Professor at École Polytechnique Fédérale de Lausanne, where he leads the Environmental Computational Science and Earth Observation Laboratory (ECEO). His research focuses on machine learning for Earth observation, geospatial foundation models, environmental monitoring, and AI for sustainability. He has made influential contributions to domain adaptation, self-supervised learning, weakly supervised learning, and foundation models for remote sensing. More recently, his work explores multimodal and generative AI systems for Earth observation, with applications in biodiversity monitoring, ecosystem understanding, and climate-related challenges.",
     url: "https://people.epfl.ch/devis.tuia?lang=en",
     avatar: "https://people.epfl.ch/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTI0MjAsImV4cCI6IjIwMjYtMDYtMDNUMTI6Mjg6MDQuNzI0WiIsInB1ciI6ImJsb2JfaWQifX0=--0d710c27f1816c5d641c39dc6b89b3d2d55f04a9/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOlszMDAsMzAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--0e4cac8384c27a8ce16cc743e4688ad1c990158e/150680.jpg?lang=en"
-  }
-];
-
-export const PANEL_SPEAKERS: Speaker[] = [
+  },
   {
     name: "Mengyue Yang",
     role: "Lecturer in Artificial Intelligence",
@@ -123,7 +120,7 @@ export const ORGANIZERS: Organizer[] = [
     email: "shelhamer@cs.ubc.ca",
     url: "https://imaginarynumber.net/research/",
     bio: "Evan Shelhamer (invited) is an assistant professor at the University of British Columbia, a member of the Vector Institute, and a Canada CIFAR AI Chair. His research focuses on visual recognition, self-supervision for learning without labels, and adaptation to new/different data. He was the lead developer of the Caffe deep learning framework, led academic and industry tutorials on deep learning, and shared the Everingham service award for Caffe at ICCV'17. He is now focused on self-supervised learning for remote sensing including for interactive mapping (CVPR 2024 demo track).",
-    avatar: "/manus-storage/evan_shelhamer_1599a99f.jpg"
+    avatar: "https://imaginarynumber.net/research/images/shelhamer.jpg"
   },
   {
     name: "Danfeng Hong",
