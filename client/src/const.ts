@@ -114,7 +114,7 @@ export const ORGANIZERS: Organizer[] = [
     email: "rww.haensch@gmail.com",
     url: "http://www.rhaensch.de/",
     bio: "Ronny Hänsch leads the Machine Learning Team in the Signal Processing Group of the SAR Technology Department at the Microwave and Radar Institute of the German Aerospace Center (DLR). His research interest is computer vision and machine learning with a focus on remote sensing. He has extensive experience in organizing remote sensing community competitions, serves as the GRSS representative within SpaceNet, and was the technical lead of the SpaceNet 8 Challenge. Ronny has served as Chair of the EarthVision Workshop at CVPR (2019–2026), Co-Chair of the Machine Learning for Remote Sensing Workshop at ICLR 2023, Co-Chair of the Machine Vision for Earth Observation and Environment Monitoring (MVEO) Workshop at BMVC 2023 and 2024, and Co-Chair of the 1st Workshop on Computer Vision for Earth Observation (CV4EO) Applications at WACV 2024.",
-    avatar: "http://www.rhaensch.de/images/rhaensch.png"
+    avatar: "/manus-storage/rhaensch_73ab778c.png"
   },
   {
     name: "Evan Shelhamer",
