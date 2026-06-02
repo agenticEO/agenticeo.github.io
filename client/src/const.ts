@@ -14,13 +14,7 @@ export interface Organizer {
   email: string;
   url: string;
   bio: string;
-}
-
-export interface ProgramCommitteeMember {
-  name: string;
-  affiliation: string;
-  role: string;
-  email: string;
+  avatar?: string;
 }
 
 export interface ScheduleItem {
@@ -36,7 +30,8 @@ export const KEYNOTE_SPEAKERS: Speaker[] = [
     affiliation: "Stanford University",
     status: "Confirmed in-person (Sydney preferred)",
     bio: "Stefano Ermon is an Associate Professor in the Department of Computer Science at Stanford University, where he is affiliated with the Stanford Artificial Intelligence Laboratory (SAIL) and a fellow of the Woods Institute for the Environment. His research focuses on machine learning, generative AI, probabilistic modeling, and robust decision-making under uncertainty, with strong emphasis on real-world societal and environmental applications. He is widely recognized for pioneering contributions to score-based generative modeling and diffusion models, as well as research on foundation models, computational sustainability, and AI for science. His work bridges core AI methodology with applications in climate, Earth systems, and scientific discovery, making his expertise highly relevant to emerging research on agentic AI for Earth observation.",
-    url: "https://cs.stanford.edu/~ermon/"
+    url: "https://cs.stanford.edu/~ermon/",
+    avatar: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493919263/9DrfZuSabAu7vok4PSS7EX/speaker_stefano-VGkGHXZZiUUidfBmKHB8i5.webp"
   },
   {
     name: "Naoto Yokoya",
@@ -64,7 +59,8 @@ export const KEYNOTE_SPEAKERS: Speaker[] = [
     role: "Full Professor & Chair of Data Science in EO",
     affiliation: "Technical University of Munich",
     status: "Confirmed (Paris in-person, Sydney online)",
-    bio: "Xiao Xiang Zhu (IEEE Fellow) is a Full Professor and Chair of Data Science in Earth Observation at Technical University of Munich. She is internationally recognized for her pioneering contributions to AI for Earth observation, multimodal geospatial foundation models, SAR image analysis, and large-scale urban Earth monitoring. Her research lies at the intersection of machine learning, remote sensing, and geospatial data science, with recent work focusing on foundation models and AI-driven Earth intelligence systems."
+    bio: "Xiao Xiang Zhu (IEEE Fellow) is a Full Professor and Chair of Data Science in Earth Observation at Technical University of Munich. She is internationally recognized for her pioneering contributions to AI for Earth observation, multimodal geospatial foundation models, SAR image analysis, and large-scale urban Earth monitoring. Her research lies at the intersection of machine learning, remote sensing, and geospatial data science, with recent work focusing on foundation models and AI-driven Earth intelligence systems.",
+    avatar: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493919263/9DrfZuSabAu7vok4PSS7EX/speaker_xiaoxiang-7jKQfiegim8VGSYSxqk3i3.webp"
   },
   {
     name: "Devis Tuia",
@@ -91,7 +87,8 @@ export const ORGANIZERS: Organizer[] = [
     affiliation: "University of Bristol",
     email: "xiang92.li@bristol.ac.uk",
     url: "https://xiangli.ac.cn",
-    bio: "Xiang Li is a Lecturer (Assistant Professor) at University of Bristol. His research lies at the intersection of computer vision and remote sensing. His recent work focuses on reinforcement fine-tuning, geospatial reasoning, and agentic AI for Earth observation, including multimodal foundation models capable of perception, reasoning, and decision-making. He has published extensively in leading AI and remote sensing venues such as CVPR, ICCV, NeurIPS, and contributed to influential projects including MiniGPT-4 and RSGPT. He also serves as organizer for multiple workshops at CVPR, including the Compositional 3D Vision Workshop at CVPR 2023/2024/2025, and as guest editor for several special issues, including IEEE GRSM special issues on vision-language models in remote sensing."
+    bio: "Xiang Li is a Lecturer (Assistant Professor) at University of Bristol. His research lies at the intersection of computer vision and remote sensing. His recent work focuses on reinforcement fine-tuning, geospatial reasoning, and agentic AI for Earth observation, including multimodal foundation models capable of perception, reasoning, and decision-making. He has published extensively in leading AI and remote sensing venues such as CVPR, ICCV, NeurIPS, and contributed to influential projects including MiniGPT-4 and RSGPT. He also serves as organizer for multiple workshops at CVPR, including the Compositional 3D Vision Workshop at CVPR 2023/2024/2025, and as guest editor for several special issues, including IEEE GRSM special issues on vision-language models in remote sensing.",
+    avatar: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493919263/9DrfZuSabAu7vok4PSS7EX/organizer_xiang-KizzQDDv9PGAinMhiFMeYM.webp"
   },
   {
     name: "Tianjin Huang",
@@ -128,18 +125,6 @@ export const ORGANIZERS: Organizer[] = [
     url: "https://liweijia.github.io/",
     bio: "Weijia Li is an Associate Professor at Tsinghua University working on computer vision, deep learning, and urban remote sensing. Her recent research focuses on large multimodal models, generative AI, and AI agents for geospatial understanding. She has contributed to influential works on cross-view geo-localization, multimodal reasoning benchmarks, synthetic image understanding, and urban scene intelligence, with publications in top-tier venues including CVPR, ICCV, NeurIPS, ICLR, and ICML."
   }
-];
-
-export const PROGRAM_COMMITTEE: ProgramCommitteeMember[] = [
-  { name: "Xiang Li", affiliation: "University of Bristol", role: "Lecturer", email: "xiang92.li@bristol.ac.uk" },
-  { name: "Mengyue Yang", affiliation: "University of Bristol", role: "Lecturer", email: "mengyue.yang@bristol.ac.uk" },
-  { name: "Weihong Li", affiliation: "University of Bristol", role: "Lecturer", email: "weihong.li@bristol.ac.uk" },
-  { name: "Weijia Li", affiliation: "Tsinghua University", role: "Associate Professor", email: "liweijia@sz.tsinghua.edu.cn" },
-  { name: "Tianjin Huang", affiliation: "University of Exeter", role: "Lecturer", email: "T.Huang2@exeter.ac.uk" },
-  { name: "Congcong Wen", affiliation: "New York University", role: "Postdoc Associate", email: "cw3437@nyu.edu" },
-  { name: "Zilun Zhang", affiliation: "Zhejiang University", role: "PhD student", email: "zilun@cs.toronto.edu" },
-  { name: "Yong Tao", affiliation: "University of Exeter", role: "PhD student", email: "yt438@exeter.ac.uk" },
-  { name: "Siming Fu", affiliation: "Wuhan University", role: "Master student", email: "2020302131118@whu.edu.cn" }
 ];
 
 export const SCHEDULE: ScheduleItem[] = [
