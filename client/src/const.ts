@@ -87,7 +87,8 @@ export const PANEL_SPEAKERS: Speaker[] = [
     affiliation: "University of Bristol",
     status: "Confirmed in-person (Sydney preferred)",
     bio: "Mengyue Yang is a Lecturer in Artificial Intelligence at the University of Bristol. Her research focuses on causality, reinforcement learning, multi-agent systems, world models, and large language model agents. She received her PhD in Computer Science from University College London, supervised by Professor Jun Wang. Her work has been published in leading AI venues including NeurIPS, ICML, ICLR, KDD, CVPR, SIGIR, and AAAI. She was selected for the AAAI 2026 New Faculty Highlights program and named a 2024 Rising Star in AI by KAUST.",
-    url: "https://ymy4323460.github.io/ymy4323460.github.io/"
+    url: "https://ymy4323460.github.io/ymy4323460.github.io/",
+    avatar: "/manus-storage/mengyue_yang_0b59f49b.jpg"
   }
 ];
 
@@ -98,7 +99,7 @@ export const ORGANIZERS: Organizer[] = [
     email: "xiang92.li@bristol.ac.uk",
     url: "https://xiangli.ac.cn",
     bio: "Xiang Li is a Lecturer (Assistant Professor) at University of Bristol. His research lies at the intersection of computer vision and remote sensing. His recent work focuses on reinforcement fine-tuning, geospatial reasoning, and agentic AI for Earth observation, including multimodal foundation models capable of perception, reasoning, and decision-making. He has published extensively in leading AI and remote sensing venues such as CVPR, ICCV, NeurIPS, and contributed to influential projects including MiniGPT-4 and RSGPT. He also serves as organizer for multiple workshops at CVPR, including the Compositional 3D Vision Workshop at CVPR 2023/2024/2025, and as guest editor for several special issues, including IEEE GRSM special issues on vision-language models in remote sensing.",
-    avatar: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493919263/9DrfZuSabAu7vok4PSS7EX/organizer_xiang-KizzQDDv9PGAinMhiFMeYM.webp"
+    avatar: "/manus-storage/xiang_li_7e5e2dc3.jpg"
   },
   {
     name: "Tianjin Huang",
@@ -128,7 +129,8 @@ export const ORGANIZERS: Organizer[] = [
     affiliation: "Southeast University",
     email: "hongdf@aircas.ac.cn",
     url: "https://sites.google.com/view/danfeng-hong",
-    bio: "Danfeng Hong is a Full Professor at Southeast University and a leading researcher in AI for remote sensing, multimodal Earth observation, and geospatial foundation models. His research spans hyperspectral imaging, multimodal learning, foundation models, and AI-driven Earth system understanding. He has extensive experience organizing major international workshops and conferences, serving as Program Chair for IEEE WHISPERS 2023, IEEE IGARSS 2020/2024, and organizer of the Workshop on Foundation and Large Vision Models in Remote Sensing at CVPR 2025."
+    bio: "Danfeng Hong is a Full Professor at Southeast University and a leading researcher in AI for remote sensing, multimodal Earth observation, and geospatial foundation models. His research spans hyperspectral imaging, multimodal learning, foundation models, and AI-driven Earth system understanding. He has extensive experience organizing major international workshops and conferences, serving as Program Chair for IEEE WHISPERS 2023, IEEE IGARSS 2020/2024, and organizer of the Workshop on Foundation and Large Vision Models in Remote Sensing at CVPR 2025.",
+    avatar: "/manus-storage/danfeng_hong_92e702cf.jpg"
   },
   {
     name: "Weijia Li",
