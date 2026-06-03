@@ -129,7 +129,7 @@ export const ORGANIZERS: Organizer[] = [
     email: "hongdf@aircas.ac.cn",
     url: "https://sites.google.com/view/danfeng-hong",
     bio: "Danfeng Hong is a Full Professor at Southeast University and a leading researcher in AI for remote sensing, multimodal Earth observation, and geospatial foundation models. His research spans hyperspectral imaging, multimodal learning, foundation models, and AI-driven Earth system understanding. He has extensive experience organizing major international workshops and conferences, serving as Program Chair for IEEE WHISPERS 2023, IEEE IGARSS 2020/2024, and organizer of the Workshop on Foundation and Large Vision Models in Remote Sensing at CVPR 2025.",
-    avatar: "/assets/images/danfeng.jpg"
+    avatar: "/assets/images/danfeng.webp"
   },
   {
     name: "Weijia Li",
@@ -137,7 +137,7 @@ export const ORGANIZERS: Organizer[] = [
     email: "liweijia@sz.tsinghua.edu.cn",
     url: "https://liweijia.github.io/",
     bio: "Weijia Li is an Associate Professor at Tsinghua University working on computer vision, deep learning, and urban remote sensing. Her recent research focuses on large multimodal models, generative AI, and AI agents for geospatial understanding. She has contributed to influential works on cross-view geo-localization, multimodal reasoning benchmarks, synthetic image understanding, and urban scene intelligence, with publications in top-tier venues including CVPR, ICCV, NeurIPS, ICLR, and ICML.",
-    avatar: "/assets/images/weijia.png"
+    avatar: "https://liweijia.github.io/assets/img/liweijia-2.png"
   },
   {
     name: "Tianjin Huang",

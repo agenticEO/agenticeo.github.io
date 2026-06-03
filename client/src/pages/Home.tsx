@@ -27,14 +27,14 @@ export default function Home() {
         </div>
 
         <div className="container max-w-4xl relative z-10 space-y-6">
-          <div className="text-sky-400 text-sm font-semibold tracking-widest uppercase">
-            NeurIPS 2026 Workshop Proposal
-          </div>
-          
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-white leading-tight">
             Agentic AI for <br />
             <span className="text-sky-300">Earth Observation</span>
           </h1>
+
+          <div className="text-base text-slate-300 font-medium uppercase tracking-wider">
+            (draft version)
+          </div>
 
           <div className="text-xl md:text-2xl text-slate-200 font-light max-w-2xl mx-auto leading-relaxed">
             December 12, 2026 — Sydney or Paris
