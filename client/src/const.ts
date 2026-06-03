@@ -67,7 +67,7 @@ export const INVITED_SPEAKERS: Speaker[] = [
     status: "Confirmed in-person (Sydney)",
     bio: "Salman Khan is an Associate Professor in the Computer Vision Department at Mohamed bin Zayed University of Artificial Intelligence (MBZUAI) and an adjunct faculty member at the Australian National University. His research lies at the intersection of vision, language, and learning, with major contributions to multimodal learning, vision-language models, continual learning, open-world recognition, and robust AI systems. More recently, his work has increasingly focused on geospatial AI, AI for climate science, and Earth observation foundation models, including multimodal reasoning systems for remote sensing and environmental monitoring. He has published extensively in top AI venues including CVPR, ICCV, NeurIPS, ICML, and ICLR, and has contributed to influential projects such as GeoChat, Video-ChatGPT, and multilingual multimodal foundation models.",
     url: "https://salman-h-khan.github.io/",
-    avatar: "/assets/images/salman.png"
+    avatar: "/assets/images/salman.jpg"
   },
   {
     name: "Devis Tuia",
