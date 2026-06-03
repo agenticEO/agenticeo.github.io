@@ -43,6 +43,15 @@ export const INVITED_SPEAKERS: Speaker[] = [
     avatar: "https://naotoyokoya.com/assets/img/yokoya24_390.webp"
   },
   {
+    name: "Xiao Xiang Zhu",
+    role: "Full Professor & Chair of Data Science in EO",
+    affiliation: "Technical University of Munich",
+    status: "Confirmed (Paris in-person, Sydney online)",
+    bio: "Xiao Xiang Zhu (IEEE Fellow) is a Full Professor and Chair of Data Science in Earth Observation at Technical University of Munich. She is internationally recognized for her pioneering contributions to AI for Earth observation, multimodal geospatial foundation models, SAR image analysis, and large-scale urban Earth monitoring. Her research lies at the intersection of machine learning, remote sensing, and geospatial data science, with recent work focusing on foundation models and AI-driven Earth intelligence systems.",
+    url: "https://www.asg.ed.tum.de/sipeo/team/zhu/",
+    avatar: "/manus-storage/pasted_file_kl4MIb_xiaoxiangzhu_e7cf6643.png"
+  },
+  {
     name: "Gui-Song Xia",
     role: "Hongyi Distinguished Professor & Acting Vice Dean",
     affiliation: "Wuhan University",
@@ -59,15 +68,6 @@ export const INVITED_SPEAKERS: Speaker[] = [
     bio: "Salman Khan is an Associate Professor in the Computer Vision Department at Mohamed bin Zayed University of Artificial Intelligence (MBZUAI) and an adjunct faculty member at the Australian National University. His research lies at the intersection of vision, language, and learning, with major contributions to multimodal learning, vision-language models, continual learning, open-world recognition, and robust AI systems. More recently, his work has increasingly focused on geospatial AI, AI for climate science, and Earth observation foundation models, including multimodal reasoning systems for remote sensing and environmental monitoring. He has published extensively in top AI venues including CVPR, ICCV, NeurIPS, ICML, and ICLR, and has contributed to influential projects such as GeoChat, Video-ChatGPT, and multilingual multimodal foundation models.",
     url: "https://salman-h-khan.github.io/",
     avatar: "https://salman-h-khan.github.io/images/salman.png"
-  },
-  {
-    name: "Xiao Xiang Zhu",
-    role: "Full Professor & Chair of Data Science in EO",
-    affiliation: "Technical University of Munich",
-    status: "Confirmed (Paris in-person, Sydney online)",
-    bio: "Xiao Xiang Zhu (IEEE Fellow) is a Full Professor and Chair of Data Science in Earth Observation at Technical University of Munich. She is internationally recognized for her pioneering contributions to AI for Earth observation, multimodal geospatial foundation models, SAR image analysis, and large-scale urban Earth monitoring. Her research lies at the intersection of machine learning, remote sensing, and geospatial data science, with recent work focusing on foundation models and AI-driven Earth intelligence systems.",
-    url: "https://www.asg.ed.tum.de/sipeo/team/zhu/",
-    avatar: "/manus-storage/pasted_file_kl4MIb_xiaoxiangzhu_e7cf6643.png"
   },
   {
     name: "Devis Tuia",
@@ -108,14 +108,6 @@ export const ORGANIZERS: Organizer[] = [
     avatar: "/manus-storage/xiang_li_7e5e2dc3.jpg"
   },
   {
-    name: "Tianjin Huang",
-    affiliation: "University of Exeter",
-    email: "t.huang4@exeter.ac.uk",
-    url: "https://tianjinyellow.github.io/",
-    bio: "Tianjin Huang is a Lecturer (Assistant Professor) at University of Exeter whose research focuses on building reliable and efficient AI systems for real-world applications. His research interests include reliable foundation models, with emphasis on efficient training, tuning, and compression under imperfect data conditions; agentic AI for robust and generalizable autonomous systems; and AI for science and biomedicine, particularly enabling large models in data-scarce and high-stakes domains. His recent work also explores multimodal foundation models and intelligent AI systems for scientific and geospatial applications.",
-    avatar: "/manus-storage/pasted_file_LxhB5P_htj_c5166337.jpg"
-  },
-  {
     name: "Ronny Hänsch",
     affiliation: "German Aerospace Center (DLR)",
     email: "rww.haensch@gmail.com",
@@ -146,6 +138,14 @@ export const ORGANIZERS: Organizer[] = [
     url: "https://liweijia.github.io/",
     bio: "Weijia Li is an Associate Professor at Tsinghua University working on computer vision, deep learning, and urban remote sensing. Her recent research focuses on large multimodal models, generative AI, and AI agents for geospatial understanding. She has contributed to influential works on cross-view geo-localization, multimodal reasoning benchmarks, synthetic image understanding, and urban scene intelligence, with publications in top-tier venues including CVPR, ICCV, NeurIPS, ICLR, and ICML.",
     avatar: "https://liweijia.github.io/assets/img/liweijia-2.png"
+  },
+  {
+    name: "Tianjin Huang",
+    affiliation: "University of Exeter",
+    email: "t.huang4@exeter.ac.uk",
+    url: "https://tianjinyellow.github.io/",
+    bio: "Tianjin Huang is a Lecturer (Assistant Professor) at University of Exeter whose research focuses on building reliable and efficient AI systems for real-world applications. His research interests include reliable foundation models, with emphasis on efficient training, tuning, and compression under imperfect data conditions; agentic AI for robust and generalizable autonomous systems; and AI for science and biomedicine, particularly enabling large models in data-scarce and high-stakes domains. His recent work also explores multimodal foundation models and intelligent AI systems for scientific and geospatial applications.",
+    avatar: "/manus-storage/pasted_file_LxhB5P_htj_c5166337.jpg"
   }
 ];
 
