@@ -79,6 +79,15 @@ export const INVITED_SPEAKERS: Speaker[] = [
     avatar: "https://people.epfl.ch/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTI0MjAsImV4cCI6IjIwMjYtMDYtMDNUMTI6Mjg6MDQuNzI0WiIsInB1ciI6ImJsb2JfaWQifX0=--0d710c27f1816c5d641c39dc6b89b3d2d55f04a9/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOlszMDAsMzAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--0e4cac8384c27a8ce16cc743e4688ad1c990158e/150680.jpg?lang=en"
   },
   {
+    name: "Caleb Robinson",
+    role: "Principal Research Scientist Manager",
+    affiliation: "Microsoft AI for Good Research Lab",
+    status: "Confirmed in-person (Seattle)",
+    bio: "Caleb Robinson is a Principal Research Science Manager in the Microsoft AI for Good Research Lab where he co-leads the Geospatial ML research group and focuses on tackling large scale applied problems at the intersection of remote sensing and machine learning/computer vision.",
+    url: "https://calebrob.com/",
+    avatar: "/manus-storage/caleb_robinson_bd98c697.jpg"
+  },
+  {
     name: "Mengyue Yang",
     role: "Lecturer in Artificial Intelligence",
     affiliation: "University of Bristol",
@@ -115,12 +124,12 @@ export const ORGANIZERS: Organizer[] = [
     avatar: "/manus-storage/rhaensch_73ab778c.png"
   },
   {
-    name: "Evan Shelhamer",
-    affiliation: "University of British Columbia",
-    email: "shelhamer@cs.ubc.ca",
-    url: "https://imaginarynumber.net/research/",
-    bio: "Evan Shelhamer (invited) is an assistant professor at the University of British Columbia, a member of the Vector Institute, and a Canada CIFAR AI Chair. His research focuses on visual recognition, self-supervision for learning without labels, and adaptation to new/different data. He was the lead developer of the Caffe deep learning framework, led academic and industry tutorials on deep learning, and shared the Everingham service award for Caffe at ICCV'17. He is now focused on self-supervised learning for remote sensing including for interactive mapping (CVPR 2024 demo track).",
-    avatar: "https://imaginarynumber.net/research/images/shelhamer.jpg"
+    name: "Xiuping Jia",
+    affiliation: "University of New South Wales (UNSW Canberra)",
+    email: "x.jia@adfa.edu.au",
+    url: "https://www.unsw.edu.au/staff/xiuping-jia",
+    bio: "Xiuping Jia is an Associate Professor at the School of Engineering and Technology, UNSW Canberra. Her research interests are remote sensing, hyperspectral image processing, pattern recognition, and spatial data analysis for remote sensing applications.",
+    avatar: "/manus-storage/xiuping_jia_bed72a9c.png"
   },
   {
     name: "Danfeng Hong",
