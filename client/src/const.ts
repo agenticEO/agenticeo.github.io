@@ -34,15 +34,6 @@ export const INVITED_SPEAKERS: Speaker[] = [
     avatar: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493919263/9DrfZuSabAu7vok4PSS7EX/speaker_stefano-VGkGHXZZiUUidfBmKHB8i5.webp"
   },
   {
-    name: "Naoto Yokoya",
-    role: "Professor & Team Director",
-    affiliation: "The University of Tokyo / RIKEN",
-    status: "Confirmed in-person (Sydney preferred)",
-    bio: "Naoto Yokoya is a Professor at The University of Tokyo and Team Director at RIKEN. His research focuses on visual and spatial intelligence, developing intelligent systems that understand and reason about the physical and semantic structure of the real world from multimodal observations. His work lies at the intersection of computer vision, machine learning, remote sensing, and data fusion, with particular emphasis on Earth observation as a socially impactful domain for advancing AI. He has made influential contributions to hyperspectral imaging, multimodal data fusion, geospatial foundation models, disaster monitoring, and AI-driven Earth understanding. His recent work explores multimodal reasoning systems, geospatial generative AI, and foundation models for large-scale environmental and disaster applications. He is widely recognized as a leading researcher in geospatial AI and remote sensing machine learning.",
-    url: "https://naotoyokoya.com/",
-    avatar: "https://naotoyokoya.com/assets/img/yokoya24_390.webp"
-  },
-  {
     name: "Xiao Xiang Zhu",
     role: "Full Professor & Chair of Data Science in EO",
     affiliation: "Technical University of Munich",
@@ -50,6 +41,15 @@ export const INVITED_SPEAKERS: Speaker[] = [
     bio: "Xiao Xiang Zhu (IEEE Fellow) is a Full Professor and Chair of Data Science in Earth Observation at Technical University of Munich. She is internationally recognized for her pioneering contributions to AI for Earth observation, multimodal geospatial foundation models, SAR image analysis, and large-scale urban Earth monitoring. Her research lies at the intersection of machine learning, remote sensing, and geospatial data science, with recent work focusing on foundation models and AI-driven Earth intelligence systems.",
     url: "https://www.asg.ed.tum.de/sipeo/team/zhu/",
     avatar: "/manus-storage/pasted_file_kl4MIb_xiaoxiangzhu_e7cf6643.png"
+  },
+  {
+    name: "Naoto Yokoya",
+    role: "Professor & Team Director",
+    affiliation: "The University of Tokyo / RIKEN",
+    status: "Confirmed in-person (Sydney preferred)",
+    bio: "Naoto Yokoya is a Professor at The University of Tokyo and Team Director at RIKEN. His research focuses on visual and spatial intelligence, developing intelligent systems that understand and reason about the physical and semantic structure of the real world from multimodal observations. His work lies at the intersection of computer vision, machine learning, remote sensing, and data fusion, with particular emphasis on Earth observation as a socially impactful domain for advancing AI. He has made influential contributions to hyperspectral imaging, multimodal data fusion, geospatial foundation models, disaster monitoring, and AI-driven Earth understanding. His recent work explores multimodal reasoning systems, geospatial generative AI, and foundation models for large-scale environmental and disaster applications. He is widely recognized as a leading researcher in geospatial AI and remote sensing machine learning.",
+    url: "https://naotoyokoya.com/",
+    avatar: "https://naotoyokoya.com/assets/img/yokoya24_390.webp"
   },
   {
     name: "Gui-Song Xia",
@@ -108,20 +108,20 @@ export const ORGANIZERS: Organizer[] = [
     avatar: "/manus-storage/xiang_li_7e5e2dc3.jpg"
   },
   {
-    name: "Ronny Hänsch",
-    affiliation: "German Aerospace Center (DLR)",
-    email: "rww.haensch@gmail.com",
-    url: "http://www.rhaensch.de/",
-    bio: "Ronny Hänsch leads the Machine Learning Team in the Signal Processing Group of the SAR Technology Department at the Microwave and Radar Institute of the German Aerospace Center (DLR). His research interest is computer vision and machine learning with a focus on remote sensing. He has extensive experience in organizing remote sensing community competitions, serves as the GRSS representative within SpaceNet, and was the technical lead of the SpaceNet 8 Challenge. Ronny has served as Chair of the EarthVision Workshop at CVPR (2019–2026), Co-Chair of the Machine Learning for Remote Sensing Workshop at ICLR 2023, Co-Chair of the Machine Vision for Earth Observation and Environment Monitoring (MVEO) Workshop at BMVC 2023 and 2024, and Co-Chair of the 1st Workshop on Computer Vision for Earth Observation (CV4EO) Applications at WACV 2024.",
-    avatar: "/manus-storage/rhaensch_73ab778c.png"
-  },
-  {
     name: "Xiuping Jia",
     affiliation: "University of New South Wales (UNSW Canberra)",
     email: "x.jia@adfa.edu.au",
     url: "https://www.unsw.edu.au/staff/xiuping-jia",
     bio: "Xiuping Jia is an Associate Professor at the School of Engineering and Technology, UNSW Canberra. Her research interests are remote sensing, hyperspectral image processing, pattern recognition, and spatial data analysis for remote sensing applications.",
     avatar: "/manus-storage/xiuping_jia_bed72a9c.png"
+  },
+  {
+    name: "Ronny Hänsch",
+    affiliation: "German Aerospace Center (DLR)",
+    email: "rww.haensch@gmail.com",
+    url: "http://www.rhaensch.de/",
+    bio: "Ronny Hänsch leads the Machine Learning Team in the Signal Processing Group of the SAR Technology Department at the Microwave and Radar Institute of the German Aerospace Center (DLR). His research interest is computer vision and machine learning with a focus on remote sensing. He has extensive experience in organizing remote sensing community competitions, serves as the GRSS representative within SpaceNet, and was the technical lead of the SpaceNet 8 Challenge. Ronny has served as Chair of the EarthVision Workshop at CVPR (2019–2026), Co-Chair of the Machine Learning for Remote Sensing Workshop at ICLR 2023, Co-Chair of the Machine Vision for Earth Observation and Environment Monitoring (MVEO) Workshop at BMVC 2023 and 2024, and Co-Chair of the 1st Workshop on Computer Vision for Earth Observation (CV4EO) Applications at WACV 2024.",
+    avatar: "/manus-storage/rhaensch_73ab778c.png"
   },
   {
     name: "Danfeng Hong",
