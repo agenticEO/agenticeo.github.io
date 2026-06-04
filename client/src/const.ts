@@ -83,7 +83,7 @@ export const INVITED_SPEAKERS: Speaker[] = [
     role: "Principal Research Scientist Manager",
     affiliation: "Microsoft AI for Good Research Lab",
     status: "Confirmed in-person (Seattle)",
-    bio: "Caleb Robinson is a Principal Research Science Manager in the Microsoft AI for Good Research Lab where he co-leads the Geospatial ML research group and focuses on tackling large scale applied problems at the intersection of remote sensing and machine learning/computer vision.",
+    bio: "Caleb Robinson is a Principal Research Science Manager in the Microsoft AI for Good Research Lab where i co-lead the Geospatial ML research group and focuses on tackling large scale applied problems at the intersection of remote sensing and machine learning/computer vision.",
     url: "https://calebrob.com/",
     avatar: "/assets/images/caleb.jpg"
   },
@@ -109,10 +109,10 @@ export const ORGANIZERS: Organizer[] = [
   },
   {
     name: "Xiuping Jia",
-    affiliation: "University of New South Wales (UNSW Canberra)",
+    affiliation: "University of New South Wales (UNSW)",
     email: "x.jia@adfa.edu.au",
     url: "https://www.unsw.edu.au/staff/xiuping-jia",
-    bio: "Xiuping Jia is an Associate Professor at the School of Engineering and Technology, UNSW Canberra. Her research interests are remote sensing, hyperspectral image processing, pattern recognition, and spatial data analysis for remote sensing applications.",
+    bio: "Xiuping Jia is an Associate Professor at the School of Engineering and Technology, UNSW. Her research interests are remote sensing, hyperspectral image processing, pattern recognition, and spatial data analysis for remote sensing applications.",
     avatar: "/assets/images/xiuping.png"
   },
   {
